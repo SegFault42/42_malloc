@@ -6,13 +6,13 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/14 05:59:09 by rabougue          #+#    #+#             */
-/*   Updated: 2017/05/15 01:25:46 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/05/17 07:37:30 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/malloc.h"
 
-void	*ft_malloc(size_t size)
+void	*malloc(size_t size)
 {
 	void	*allocation_famillial;
 

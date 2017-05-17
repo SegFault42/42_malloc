@@ -7,7 +7,7 @@
 
 int	main()
 {
-	char *str = ft_malloc(sizeof(char) * -10);
+	char *str = malloc(sizeof(char) * -10);
 	/*strcat(str, "loliiiiiiiiiiiiiiiiiiii");*/
 	/*printf("%s\n", str);*/
 }

@@ -6,7 +6,7 @@
 #    By: rabougue <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/10 19:16:51 by rabougue          #+#    #+#              #
-#    Updated: 2017/05/14 06:22:28 by rabougue         ###   ########.fr        #
+#    Updated: 2017/05/17 07:35:41 by rabougue         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,7 @@ RELINK = ./include/malloc.h
 all: $(NAME)
 
 $(NAME): $(OBJS)
+	@rm -rf libft_malloc.so $(NAME)
 	@make -j8 -s -C ./libft/
 	@ln -s $(NAME) libft_malloc.so
 	@$(CC) $(FLAG) $(OBJS) -shared -o $(NAME) $(LFT)
