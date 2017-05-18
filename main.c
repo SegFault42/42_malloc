@@ -7,7 +7,12 @@
 
 int	main()
 {
-	char *str = malloc(sizeof(char) * -10);
+	char *str = malloc(sizeof(char) * 1000000);
+	if (str == NULL)
+	{
+		printf("NULL\n");
+		return ((int)NULL);
+	}
 	/*strcat(str, "loliiiiiiiiiiiiiiiiiiii");*/
 	/*printf("%s\n", str);*/
 }

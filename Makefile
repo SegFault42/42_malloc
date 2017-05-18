@@ -6,7 +6,7 @@
 #    By: rabougue <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/10 19:16:51 by rabougue          #+#    #+#              #
-#    Updated: 2017/05/17 07:35:41 by rabougue         ###   ########.fr        #
+#    Updated: 2017/05/18 07:41:18 by rabougue         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,7 @@ CC = gcc
 FLAG = -Weverything
 LFT = ./libft/libft.a
 SRCS =	./source/malloc.c\
+		./source/tiny.c
 
 OBJS = $(SRCS:.c=.o)
 
