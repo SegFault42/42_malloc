@@ -3,16 +3,18 @@
 #include <stdlib.h>
 #include <errno.h>
 #include "./include/malloc.h"
-
+#include "./libft/includes/libft.h"
+#include <limits.h>
 
 int	main()
 {
-	char *str = malloc(sizeof(char) * 1000000);
+	char *str = malloc(sizeof(char) * 10);
 	if (str == NULL)
 	{
-		printf("NULL\n");
+		/*printf("NULL\n");*/
 		return ((int)NULL);
 	}
-	/*strcat(str, "loliiiiiiiiiiiiiiiiiiii");*/
-	/*printf("%s\n", str);*/
+	strcat(str, "loliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii");
+	write(1, str, strlen(str));
+	show_alloc_mem();
 }

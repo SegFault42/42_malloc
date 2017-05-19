@@ -6,7 +6,7 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/17 19:31:51 by rabougue          #+#    #+#             */
-/*   Updated: 2017/04/10 04:58:38 by rabougue         ###   ########.fr       */
+/*   Updated: 2016/09/03 03:04:02 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_debug(void)
 {
-	ft_dprintf(1, RED"Debug"END);
+	ft_putstr(RED"Debug"END);
 }

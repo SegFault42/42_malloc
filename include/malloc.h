@@ -6,7 +6,7 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/14 05:54:47 by rabougue          #+#    #+#             */
-/*   Updated: 2017/05/18 07:37:53 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/05/19 05:58:13 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,28 @@ typedef struct		s_block
 	void			*ptr;		// pointer on data
 	bool			free;		// free or not
 	char			data[1];	// ???
-	char			pad[3];		// variable for padding
+	char			flag;		// flag size (tiny, small or large)
+	char			pad[5];		// variable for padding
 }					t_block;
-
-void	*alloc_tiny(size_t size);
+/*
+** tiny.c
+*/
+bool	*first_alloc_tiny(size_t size);
+void	*alloc(size_t size, char flag);
+/*
+** malloc.c
+*/
 void	*malloc(size_t size);
+/*
+** lst.c
+*/
+t_block	*create_node();
+void	*lst_push_back();
+void	*create_memory(size_t size);
+void	*lst_setup(size_t size, char flag);
+/*
+** show_alloc_mem.c
+*/
+void	show_alloc_mem();
 
 #endif

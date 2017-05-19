@@ -6,7 +6,7 @@
 #    By: rabougue <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/10 19:16:51 by rabougue          #+#    #+#              #
-#    Updated: 2017/05/18 07:41:18 by rabougue         ###   ########.fr        #
+#    Updated: 2017/05/19 05:51:16 by rabougue         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,10 +22,12 @@ END = \033[0m
 ##################################_COMPILATION_#################################
 NAME = libft_malloc_$(HOSTTYPE).so
 CC = gcc
-FLAG = -Weverything
+FLAG = -Wall -Wextra -Werror
 LFT = ./libft/libft.a
 SRCS =	./source/malloc.c\
-		./source/tiny.c
+		./source/tiny.c \
+		./source/lst.c\
+		./source/show_alloc_mem.c
 
 OBJS = $(SRCS:.c=.o)
 

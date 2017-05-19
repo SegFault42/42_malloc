@@ -6,33 +6,64 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/14 05:59:09 by rabougue          #+#    #+#             */
-/*   Updated: 2017/05/18 07:41:25 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/05/19 07:11:59 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/malloc.h"
 
-t_block		g_block;
+t_block		*g_block = NULL;
+static int	g_i = 0;
 
 static void	*alloc_large(size_t size)
 {
-	void	*allocation_famillial;
+	void	*alloc;
 
-	allocation_famillial = mmap(0, size, PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
-	if (allocation_famillial == MALLOC_FAILURE)
+	alloc = mmap(0, size, PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
+	if (alloc == MALLOC_FAILURE)
 	{
-		ft_dprintf(2, "%s\n", strerror(errno));
+		ft_putstr_fd(strerror(errno), 2);
 		return (NULL);
 	}
-	return (allocation_famillial);
+	else
+	{
+		if (g_i > 21)
+		{
+			ft_putstr_fd("\033[32mMMAP SUCCESS\n\033[0m", 1);
+			RC;
+		}
+	}
+	return (alloc);
 }
 
 void	*malloc(size_t size)
 {
+	++g_i;
+	RC;
+	ft_putstr_fd(ORANGE"iteration = "END, 1);
+	ft_putnbr(g_i);
+	RC;
+	RC;
+	ft_putstr_fd(CYAN"size = "END, 1);
+	ft_putnbr(size);
+	RC;
+	if (g_i == 22)
+		ft_putstr_fd("=======================================================\n", 1);
 	if (size <= TINY)
 	{
-		return (alloc_tiny(size));
+		ft_putstr_fd(CYAN"size = TINY"END, 2);
+		return (alloc(size, 't'));
 	}
-	return (alloc_large(size));
+	/*else if (size <= SMALL)*/
+	/*{*/
+		/*write(1, "b", 1);*/
+		/*return (alloc_small(size));*/
+	/*}*/
+	else
+	{
+		write(1, "size = LARGE", 1);
+		return (alloc_large(size));
+	}
+	return (NULL);
 }
 

@@ -17,10 +17,7 @@ int	ft_count_2d_tab(char **tab)
 	int	i;
 
 	i = 0;
-	if (tab != NULL)
-	{
-		while (tab[i])
-			++i;
-	}
+	while (tab[i])
+		++i;
 	return (i);
 }

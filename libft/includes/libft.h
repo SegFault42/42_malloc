@@ -6,7 +6,7 @@
 /*   By: rabougue <rabougue@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 18:34:24 by rabougue          #+#    #+#             */
-/*   Updated: 2017/04/09 03:43:06 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/05/19 05:36:54 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,22 @@
 # define EXIT_ERROR (-1)
 # define RC ft_putchar('\n');
 
+/*
+** define for ft_error function
+*/
+
 # define MALLOC_ERROR (1)
+
+/*
+** end comment
+*/
+
+typedef struct		s_list
+{
+	char			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}					t_list;
 
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
@@ -81,6 +96,12 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char const *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putendl_fd(char const *s, int fd);
+t_list				*ft_lstnew(void const *content, size_t content_size);
+void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void				ft_lstadd(t_list **alst, t_list *nev);
+void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 void				ft_swap(int *a, int *b);
 char				*ft_strrev(char *str);
@@ -110,7 +131,7 @@ void				ft_print_2d_tab(char **tab);
 bool				check_int_overflow(long nb);
 int					ft_count_2d_tab(char **tab);
 int					ft_count_char(char *str, char c);
-int					ft_strccmp(char *s1, char *s2, char c);
+int					ft_strccmp(const char *s1, const char *s2, char c);
 size_t				ft_strclen(const char *s, char c);
 char				*ft_strcdup(const char *s1, char c);
 char				*ft_strccat(char *s1, const char *s2, char c);
@@ -120,9 +141,6 @@ void				*ft_trymalloc(size_t size);
 void				ft_critical_error(uint8_t error);
 void				ft_set_2d_tab(char **tab, int size);
 void				ft_strxcat(char *dest, char *src, int x);
-bool				ft_str_isalpha(char *str);
-bool				ft_str_isspace(char *str);
-char				**ft_strsplit_blank(char const *s);
-void				ft_print_2d_tab_no_nl(char **tab);
+void				print_hexa(unsigned long n);
 
 #endif
