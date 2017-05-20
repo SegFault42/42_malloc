@@ -8,13 +8,14 @@
 
 int	main()
 {
-	char *str = malloc(sizeof(char) * 10);
+	char *str = malloc(sizeof(char) * 28);
+	char *str1 = malloc(sizeof(char) * 100);
 	if (str == NULL)
 	{
 		/*printf("NULL\n");*/
 		return ((int)NULL);
 	}
-	strcat(str, "loliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii");
+	strcat(str, "loliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii\n");
 	write(1, str, strlen(str));
 	show_alloc_mem();
 }

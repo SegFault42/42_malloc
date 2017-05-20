@@ -6,15 +6,15 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/19 05:14:45 by rabougue          #+#    #+#             */
-/*   Updated: 2017/05/19 05:37:26 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/05/20 06:05:20 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./includes/libft.h"
 
-static int	switch_hexa(int x)
+static unsigned long	switch_hexa(unsigned long x)
 {
-	if (0 <= x && x <= 9)
+	if (x <= 9)
 		return (48 + x);
 	if (x >= 10 && x <= 15)
 	{
@@ -26,11 +26,11 @@ static int	switch_hexa(int x)
 
 void	print_hexa(unsigned long n)
 {
-	char				str[128];
-	int					size;
-	unsigned long long	x;
+	char			str[128];
+	int				size;
+	unsigned long	x;
 
-
+	ft_memset(str, 0, 128);
 	x = n;
 	size = 0;
 	while (x >= 16)

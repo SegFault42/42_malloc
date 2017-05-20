@@ -6,7 +6,7 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/19 05:05:08 by rabougue          #+#    #+#             */
-/*   Updated: 2017/05/19 06:03:43 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/05/20 06:41:03 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,18 @@ void	show_alloc_mem()
 	static int	i = 0;
 
 	tmp = g_block;
-	while (tmp->next)
+	while (tmp)
 	{
-	ft_putnbr(i);
-	RC;
 		if (i >= 21 && tmp->flag == 't')
 		{
-			ft_putstr_fd("TINY : ", 1);
+			ft_putendl_fd("TINY : ", 1);
+
 			print_hexa((unsigned long)tmp->ptr);
 			RC;
+			print_hexa((unsigned long)tmp->ptr - (sizeof(t_block)));
+			RC;
 		}
-		++i;
 		tmp = tmp->next;
+		++i;
 	}
 }
