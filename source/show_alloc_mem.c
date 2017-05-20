@@ -6,7 +6,7 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/19 05:05:08 by rabougue          #+#    #+#             */
-/*   Updated: 2017/05/20 06:41:03 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/05/20 08:25:13 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,18 @@ void	show_alloc_mem()
 	{
 		if (i >= 21 && tmp->flag == 't')
 		{
-			ft_putendl_fd("TINY : ", 1);
-
-			print_hexa((unsigned long)tmp->ptr);
-			RC;
-			print_hexa((unsigned long)tmp->ptr - (sizeof(t_block)));
+			if (i == 21)
+			{
+				ft_putstr_fd(CYAN"TINY : "PURPLE, 1);
+				print_hexa((unsigned long)tmp->ptr);
+				ft_putstr_fd(END"", 1);
+				RC ;
+			}
+			print_hexa((unsigned long)tmp->ptr + sizeof(t_block));
+			ft_putstr_fd(" - ", 1);
+			print_hexa((unsigned long)tmp->ptr + sizeof(t_block) + tmp->size);
+			ft_putstr_fd(" : ", 1);
+			ft_putnbr(tmp->size);
 			RC;
 		}
 		tmp = tmp->next;

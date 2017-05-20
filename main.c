@@ -9,13 +9,14 @@
 int	main()
 {
 	char *str = malloc(sizeof(char) * 28);
-	char *str1 = malloc(sizeof(char) * 100);
+	char *str1 = malloc(sizeof(char) * 56);
+	char *str2 = malloc(sizeof(char) * 1);
 	if (str == NULL)
 	{
 		/*printf("NULL\n");*/
 		return ((int)NULL);
 	}
-	strcat(str, "loliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii\n");
+	/*strcat(str, "loliiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii\n");*/
 	write(1, str, strlen(str));
 	show_alloc_mem();
 }

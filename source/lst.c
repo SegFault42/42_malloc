@@ -6,7 +6,7 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/19 01:44:28 by rabougue          #+#    #+#             */
-/*   Updated: 2017/05/20 05:52:33 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/05/20 09:57:21 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,35 @@
 
 extern t_block *g_block;
 
+void	count_nb_octet_free()
+{
+	t_block	*tmp;
+	/*unsigned long	nb_octet;*/
+	int	i = 0;
+
+	tmp = g_block;
+	while (tmp->next)
+	{
+		if (i >= 21)
+		{
+			print_hexa((unsigned long)tmp->ptr);
+		}
+		++i;
+		tmp = tmp->next;
+	}
+	/*nb_octet = (unsigned long)tmp->ptr - nb_octet;*/
+	RC;
+}
+
 void *create_memory(size_t size)
 {
 	void *node;
 
 	node = NULL;
 	if (size <= TINY)
-		node = mmap(0, (TINY * 128) - 40, PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
+		node = mmap(0, (TINY * 128) - sizeof(t_block), PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
 	else if (size <= SMALL)
-		node = mmap(0, (SMALL * 128) - 40, PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
+		node = mmap(0, (SMALL * 128) - sizeof(t_block), PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
 	if (node == MALLOC_FAILURE)
 	{
 		ft_putstr_fd(RED"MMAP FAILURE\n"END, 2);
@@ -30,6 +50,7 @@ void *create_memory(size_t size)
 		return (NULL);
 	}
 	ft_putstr_fd(GREEN"MMAP SUCCESS\n"END, 1);
+	/*count_nb_octet_free();*/
 	ft_memset(node, 0, size);
 	return (node);
 }
