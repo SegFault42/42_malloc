@@ -29,7 +29,6 @@ typedef struct		s_block
 {
 	size_t			size;		// size of allocation
 	struct s_block	*next;		// next pointer
-	struct s_block	*prev;		// prev pointer
 	void			*ptr;		// pointer on data
 	bool			free;		// free or not
 	char			data[1];	// ???
@@ -45,6 +44,7 @@ void	*alloc(size_t size, char flag);
 ** malloc.c
 */
 void	*malloc(size_t size);
+void free(void *ptr);
 /*
 ** lst.c
 */

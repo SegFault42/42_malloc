@@ -14,6 +14,34 @@
 
 extern t_block *g_block;
 
+size_t	calc_size_to_alloc(size_t size)
+{
+	size_t	final_size;
+	size_t	modulo;
+	size_t	arrondie;
+
+	if (size <= TINY)
+	{
+		final_size = TINY;
+		final_size += sizeof(t_block);
+		final_size *= 128; // number of allocation
+	}
+	else
+	{
+		final_size = SMALL;
+		final_size += sizeof(t_block);
+		final_size *= 128; // number of allocation
+	}
+	modulo = final_size % getpagesize();
+	if (modulo)
+	{
+		arrondie = getpagesize() - modulo;
+		final_size += arrondie;
+	}
+	ft_putnbr(final_size);
+	return (final_size);
+}
+
 void	count_nb_octet_free()
 {
 	t_block	*tmp;
@@ -39,10 +67,7 @@ void *create_memory(size_t size)
 	void *node;
 
 	node = NULL;
-	if (size <= TINY)
-		node = mmap(0, (TINY * 128) - sizeof(t_block), PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
-	else if (size <= SMALL)
-		node = mmap(0, (SMALL * 128) - sizeof(t_block), PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
+	node = mmap(0, calc_size_to_alloc(size), PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
 	if (node == MALLOC_FAILURE)
 	{
 		ft_putstr_fd(RED"MMAP FAILURE\n"END, 2);
@@ -69,10 +94,6 @@ void *lst_setup(size_t size, char flag)
 		tmp->flag = flag;
 		tmp->size = size;
 		tmp->next = NULL;
-		if (tmp->prev != g_block)
-			tmp->prev = tmp;
-		else
-			tmp->prev = NULL;
 	}
 	return (tmp->ptr);
 

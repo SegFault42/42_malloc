@@ -15,6 +15,12 @@
 t_block		*g_block = NULL;
 static int	g_i = 0;
 
+void free(void *ptr)
+{
+	(void)ptr;
+}
+
+
 static void	*alloc_large(size_t size)
 {
 	void	*alloc;
@@ -27,7 +33,7 @@ static void	*alloc_large(size_t size)
 	}
 	else
 	{
-		if (g_i > 21)
+		if (g_i >= 21)
 		{
 			ft_putstr_fd("\033[32mMMAP SUCCESS\n\033[0m", 1);
 			RC;
@@ -39,7 +45,7 @@ static void	*alloc_large(size_t size)
 void	*malloc(size_t size)
 {
 	++g_i;
-	if (g_i == 22)
+	if (g_i == 21)
 		ft_putstr_fd("=======================================================\n", 1);
 	RC;
 	ft_putstr_fd(ORANGE"iteration = "END, 1);
@@ -62,6 +68,7 @@ void	*malloc(size_t size)
 	else
 	{
 		write(1, "size = LARGE", 1);
+	ft_putnbr(sizeof(t_block));
 		return (alloc_large(size));
 	}
 	return (NULL);

@@ -22,7 +22,7 @@ void	show_alloc_mem()
 	tmp = g_block;
 	while (tmp)
 	{
-		if (i >= 21 && tmp->flag == 't')
+		if (i >= 21 && (tmp->flag == 't' || tmp->flag == 's'))
 		{
 			if (i == 21)
 			{
