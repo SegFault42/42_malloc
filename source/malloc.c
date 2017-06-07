@@ -20,7 +20,6 @@ void free(void *ptr)
 	(void)ptr;
 }
 
-
 static void	*alloc_large(size_t size)
 {
 	void	*alloc;
