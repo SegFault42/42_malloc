@@ -26,6 +26,7 @@
 # define SMALL			256
 # define LST_FULL		1
 # define LST_NOT_FULL	0
+# define NB_ZONES		128
 
 typedef struct		s_block
 {

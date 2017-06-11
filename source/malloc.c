@@ -11,21 +11,24 @@ t_ctrl	*ctrl = NULL;
 
 void	free(void *addr)
 {
-	ft_putendl("free function");
-	ft_putstr(GREEN"");
-	print_hexa((unsigned long)addr);
-	RC;
 	t_block	*tmp;
+	int		i = 1;
 
 	tmp = g_block;
-	ft_putstr(PINK"");
-	print_hexa((unsigned long)tmp);
+	ft_putendl("free function called");
+	ft_putstr(GREEN"");
+	ft_putstr("free addr             : ");
+	print_hexa((unsigned long)addr);
+	RC;
 	while (tmp)
 	{
 		/*RC;*/
-		/*ft_putstr(YELLOW"");*/
-		/*print_hexa((unsigned long)tmp->ptr);*/
-		/*RC;*/
+		ft_putstr(YELLOW"(Node ");
+		ft_putnbr(i);
+		ft_putstr(") ");
+		ft_putstr("Current addr : ");
+		print_hexa((unsigned long)tmp->ptr);
+		RC;
 		if (tmp->ptr == addr)
 		{
 			/*ft_putstr(YELLOW"");*/
@@ -39,6 +42,7 @@ void	free(void *addr)
 		}
 		tmp = tmp->next;
 		/*ft_putendl("next");*/
+		++i;
 	}
 	ft_putendl(END"");
 	(void)addr;
@@ -130,7 +134,7 @@ void	*alloc_tiny_small(size_t size)
 
 	if (g_block == NULL || check_list_filled() == LST_FULL)
 	{
-		while (i < 128)
+		while (i < NB_ZONES)
 		{
 			lst_push_back(size);
 			++i;
@@ -163,10 +167,8 @@ void	DEBUG_print_node(t_block *node, int i)
 	ft_putendl("");
 
 	ft_putstr(PURPLE"ptr = ");
-	if (node->ptr)
-		ft_putendl("NOT NULL");
-	else
-		ft_putendl("NULL");
+	print_hexa((unsigned long)node->ptr);
+	ft_putendl("");
 	
 	ft_putstr(YELLOW"free = ");
 	ft_putnbr(node->free);
@@ -195,9 +197,15 @@ void	*malloc(size_t size)
 	t_block	*tmp;
 	void	*alloc = NULL;
 	int i = 1;
+	static size_t iter = 1;
 
+	ft_putstr(WHITE"Calling malloc ");
+	ft_putnbr(iter);
+	ft_putstr(" time\n"END);
+	++iter;
 	/*if (size <= SMALL)*/
 		alloc = alloc_tiny_small(size);
+	return (alloc);
 	/*else*/
 		/*return (alloc_large(size));*/
 	if (g_block == NULL)
@@ -210,5 +218,4 @@ void	*malloc(size_t size)
 		tmp = tmp->next;
 		++i;
 	}
-	return (alloc);
  }
