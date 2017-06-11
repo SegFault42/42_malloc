@@ -1,0 +1,6741 @@
+make: Nothing to be done for `all'.
+[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+free function
+[32m0x104DD3000
+[38;5;13m0x104DCC000[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+free function
+[32m0x7FB642400090
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400080
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424000B0
+[38;5;13m0x104DCC000[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+free function
+[32m0x7FB6424003A0
+[38;5;13m0x104DCC000[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+free function
+[32m0x7FB642400710
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400100
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400730
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400A10
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400D30
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400EC0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401280
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400EA0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400C90
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400DD0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401140
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400AF0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400290
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424012A0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401160
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401740
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401760
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401780
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400DF0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400F60
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424010A0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401000
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401510
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642400180
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401530
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401A80
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424014B0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401810
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401E20
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401F60
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401CE0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424017B0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424017F0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401B00
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401C20
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424020E0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424017D0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642402180
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401550
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424021A0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424014D0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401CC0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424014F0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401E00
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401EC0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642401AE0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642402020
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424020C0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424026F0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424012C0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642402710
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB6424025D0
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642402F80
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642402610
+[38;5;13m0x104DCC000[0m
+free function
+[32m0x7FB642402EE0
+[38;5;13m0x104DCC000[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+free function
+[32m0x104DD5000
+[38;5;13m0x104DCC000[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 24 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 24 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 25 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+free function
+[32m0x7FB642500380
+[38;5;13m0x104DCC000[0m
+[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31mDebug[0m[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+free function
+[32m0x10F434000
+[38;5;13m0x10F42D000[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+free function
+[32m0x7FC689C00090
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00080
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C000B0
+[38;5;13m0x10F42D000[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+free function
+[32m0x7FC689C003A0
+[38;5;13m0x10F42D000[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+free function
+[32m0x7FC689C00710
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00100
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00730
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00A10
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00D30
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00EC0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01280
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00EA0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00C90
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00DD0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01140
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00AF0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00290
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C012A0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01160
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01740
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01760
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01780
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00DF0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00F60
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C010A0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01000
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01510
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C00180
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01530
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01A80
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C014B0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01810
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01E20
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01F60
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01CE0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C017B0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C017F0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01B00
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01C20
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C020E0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C017D0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C02180
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01550
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C021A0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C014D0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01CC0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C014F0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01E00
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01EC0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C01AE0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C02020
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C020C0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C026F0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C012C0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C02710
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C025D0
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C02F80
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C02610
+[38;5;13m0x10F42D000[0m
+free function
+[32m0x7FC689C02EE0
+[38;5;13m0x10F42D000[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+free function
+[32m0x10F436000
+[38;5;13m0x10F42D000[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 24 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 24 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 25 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+free function
+[32m0x7FC689D00280
+[38;5;13m0x10F42D000[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 24 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 25 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 26 :
+[36msize = 125
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 24 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 25 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 26 :
+[36msize = 125
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 27 :
+[36msize = 3
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 24 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 25 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 26 :
+[36msize = 125
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 27 :
+[36msize = 3
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 28 :
+[36msize = 100
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 24 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 25 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 26 :
+[36msize = 125
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 27 :
+[36msize = 3
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 28 :
+[36msize = 100
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 29 :
+[36msize = 62
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 24 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 25 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 26 :
+[36msize = 125
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 27 :
+[36msize = 3
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 28 :
+[36msize = 100
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 29 :
+[36msize = 62
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 30 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 24 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 25 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 26 :
+[36msize = 125
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 27 :
+[36msize = 3
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 28 :
+[36msize = 100
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 29 :
+[36msize = 62
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 30 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 31 :
+[36msize = 1170
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = LARGE
+[38;5;13mnext = NOT NULL
+[0m
+Hello !
+free function
+[32m0x10F46C000
+[38;5;13m0x10F42D000[0m
+Hello !
+[31m=============================================================[0m
+[38;5;208mNode 1 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 2 :
+[36msize = 106
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 3 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 4 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 5 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 6 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 7 :
+[36msize = 8
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 8 :
+[36msize = 27
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 9 :
+[36msize = 22
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 10 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 11 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 12 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 13 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 14 :
+[36msize = 50
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 15 :
+[36msize = 47
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 16 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 17 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 18 :
+[36msize = 49
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 19 :
+[36msize = 67
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 20 :
+[36msize = 52
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 21 :
+[36msize = 54
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 22 :
+[36msize = 32
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 23 :
+[36msize = 16
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 24 :
+[36msize = 64
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 25 :
+[36msize = 14
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 26 :
+[36msize = 125
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 27 :
+[36msize = 3
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 28 :
+[36msize = 100
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = SMALL
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 29 :
+[36msize = 10
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 30 :
+[36msize = 45
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = TINY
+[38;5;13mnext = NOT NULL
+[0m
+[38;5;208mNode 31 :
+[36msize = 1170
+[35mptr = NOT NULL
+[33mfree = 1
+[38;5;246mflag = LARGE
+[38;5;13mnext = NOT NULL
+[0m
+Hello !
+lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll

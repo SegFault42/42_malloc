@@ -24,6 +24,8 @@
 # define MALLOC_FAILURE	(void *) -1
 # define TINY			64
 # define SMALL			256
+# define LST_FULL		1
+# define LST_NOT_FULL	0
 
 typedef struct		s_block
 {
