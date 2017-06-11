@@ -10,7 +10,7 @@
 
 int	main()
 {
-	char *str = malloc(sizeof(char) * SIZE);
+	char *str = malloc(sizeof(char) * 1);
 	/*char *str1 = malloc(sizeof(char) * 56);*/
 	/*char *str2 = malloc(sizeof(char) * 1);*/
 	if (str == NULL)
@@ -19,10 +19,10 @@ int	main()
 		return ((int)NULL);
 	}
 	for (int i = 0; i < SIZE; ++i)
-		strcat(str, "l");
+		strcat(str, "lllllllllllllaaaaaaaaaaaaaaaaaaaaaaallllllllllllllllll");
 	write(1, str, strlen(str));
 	write(1, "\n", 1);
-	show_alloc_mem();
+	/*show_alloc_mem();*/
 }
 
 /*int	main(int argc, char **argv)*/

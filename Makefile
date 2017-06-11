@@ -25,9 +25,6 @@ CC = gcc
 FLAG = -Wall -Wextra -Werror
 LFT = ./libft/libft.a
 SRCS =	./source/malloc.c\
-		./source/tiny.c \
-		./source/lst.c\
-		./source/show_alloc_mem.c
 
 OBJS = $(SRCS:.c=.o)
 
