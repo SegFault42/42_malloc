@@ -12,23 +12,15 @@ t_ctrl	*ctrl = NULL;
 void	free(void *addr)
 {
 	t_block	*tmp;
-	int		i = 1;
+	size_t	DEBUG_i = 1;
 
 	tmp = g_block;
-	ft_putendl("free function called");
-	ft_putstr(GREEN"");
-	ft_putstr("free addr             : ");
-	print_hexa((unsigned long)addr);
-	RC;
+	DEBUG_calling_free_message();
+	DEBUG_adress_to_free(addr);
 	while (tmp)
 	{
 		/*RC;*/
-		ft_putstr(YELLOW"(Node ");
-		ft_putnbr(i);
-		ft_putstr(") ");
-		ft_putstr("Current addr : ");
-		print_hexa((unsigned long)tmp->ptr);
-		RC;
+		DEBUG_free_current_addr(tmp->ptr, DEBUG_i);
 		if (tmp->ptr == addr)
 		{
 			/*ft_putstr(YELLOW"");*/
@@ -42,10 +34,9 @@ void	free(void *addr)
 		}
 		tmp = tmp->next;
 		/*ft_putendl("next");*/
-		++i;
+		++DEBUG_i;
 	}
 	ft_putendl(END"");
-	(void)addr;
 }
 
 void	setup_node(size_t size, t_block *node)
@@ -140,8 +131,6 @@ void	*alloc_tiny_small(size_t size)
 			++i;
 		}
 	}
-	/*else*/
-		/*lst_push_back(size);*/
 	tmp = g_block;
 	while (tmp->next && tmp->free == 1)
 		tmp = tmp->next;
@@ -156,66 +145,17 @@ void	*alloc_tiny_small(size_t size)
 	return (tmp->ptr);
 }
 
-void	DEBUG_print_node(t_block *node, int i)
-{
-	ft_putstr(ORANGE"Node ");
-	ft_putnbr(i);
-	ft_putendl(" :");
-
-	ft_putstr(CYAN"size = ");
-	ft_putnbr(node->size);
-	ft_putendl("");
-
-	ft_putstr(PURPLE"ptr = ");
-	print_hexa((unsigned long)node->ptr);
-	ft_putendl("");
-	
-	ft_putstr(YELLOW"free = ");
-	ft_putnbr(node->free);
-	ft_putendl("");
-
-	ft_putstr(GREY"flag = ");
-	if (node->flag == 't')
-		ft_putendl("TINY");
-	else if (node->flag == 's')
-		ft_putendl("SMALL");
-	else
-		ft_putendl("LARGE");
-
-	ft_putstr(PINK"next = ");
-	if (node->next)
-		ft_putendl("NOT NULL");
-	else
-		ft_putendl("NULL");
-
-	ft_putendl(""END);
-	
-}
 
 void	*malloc(size_t size)
 {
-	t_block	*tmp;
 	void	*alloc = NULL;
-	int i = 1;
-	static size_t iter = 1;
+	size_t DEBUG_iter_malloc_call = 1;
 
-	ft_putstr(WHITE"Calling malloc ");
-	ft_putnbr(iter);
-	ft_putstr(" time\n"END);
-	++iter;
+	DEBUG_calling_malloc();
 	/*if (size <= SMALL)*/
-		alloc = alloc_tiny_small(size);
-	return (alloc);
+		return (alloc = alloc_tiny_small(size));
 	/*else*/
 		/*return (alloc_large(size));*/
-	if (g_block == NULL)
-		ft_putendl("NULL");
-	tmp = g_block;
-	ft_putendl(RED"============================================================="END);
-	while (tmp && tmp->free == 1)
-	{
-		DEBUG_print_node(tmp, i);
-		tmp = tmp->next;
-		++i;
-	}
+	return (alloc);
+	DEBUG_print_info_node(DEBUG_iter_malloc_call);
  }

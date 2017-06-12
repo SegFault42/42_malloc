@@ -43,4 +43,12 @@ typedef struct		s_ctrl
 {
 	t_block			*first;
 }					t_ctrl;
+
+void	DEBUG_calling_malloc();
+void	DEBUG_print_node(t_block *node, int i);
+void	DEBUG_calling_free_message();
+void	DEBUG_adress_to_free(void *addr);
+void	DEBUG_free_current_addr(void *ptr, size_t i);
+void	DEBUG_print_info_node(size_t i);
+
 #endif
