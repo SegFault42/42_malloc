@@ -1,24 +1,19 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <errno.h>
-#include "./include/malloc.h"
-#include "./libft/includes/libft.h"
-#include <limits.h>
+/*#include <stdio.h>*/
+/*#include <string.h>*/
+/*#include <stdlib.h>*/
 
-#define SIZE 125
+/*#define SIZE 125*/
 
 int	main()
 {
-	static size_t i = 1;
 	/*char *str = malloc(sizeof(char) * SIZE);*/
 	/*char *str1 = malloc(sizeof(char) * 3);*/
 	/*char *str2 = malloc(sizeof(char) * 100);*/
-	char *str3 = malloc(sizeof(char) * 62);
+	/*char *str3 = malloc(sizeof(char) * 62);*/
 	/*char *str4 = malloc(sizeof(char) * 45);*/
 	/*char *str5 = malloc(sizeof(char) * 1170);*/
-	strcat(str3, "Hello !\n");
-	write(1, str3, strlen(str3));
+	/*strcat(str3, "Hello !\n");*/
+	/*write(1, str3, strlen(str3));*/
 	/*free(str3);*/
 	/*write(1, str3, strlen(str3));*/
 	/*str3 = malloc(sizeof(char) * 10);*/
@@ -33,9 +28,5 @@ int	main()
 	/*write(1, str, strlen(str));*/
 	/*write(1, "\n", 1);*/
 	/*show_alloc_mem();*/
-	ft_putstr("main called : ");
-	ft_putnbr(i);
-	ft_putendl("");
-	++i;
 }
 

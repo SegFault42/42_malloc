@@ -16,9 +16,8 @@
 # include <errno.h>
 # include <unistd.h>
 # include <stdbool.h>
-# include <sys/time.h>
 # include <sys/mman.h>
-# include <sys/resource.h>
+# include <string.h>
 # include "../libft/includes/libft.h"
 
 # define MALLOC_FAILURE	(void *) -1
@@ -27,6 +26,15 @@
 # define LST_FULL		1
 # define LST_NOT_FULL	0
 # define NB_ZONES		128
+
+# define DEBUG_CALLING_MALLOC		1
+# define DEBUG_PRINT_NODE			1
+# define DEBUG_CALLING_FREE_MESSAGE	1
+# define DEBUG_ADDRESS_TO_FREE		1
+# define DEBUG_FREE_CURRENT_ADDR	1
+# define DEBUG_PRINT_INFO_NODE		1
+# define DEBUG_SHOW_RET_MMAP		1
+# define DEBUG_PRINT_CTRL_G_BLOCK	1
 
 typedef struct		s_block
 {
@@ -47,8 +55,10 @@ typedef struct		s_ctrl
 void	DEBUG_calling_malloc();
 void	DEBUG_print_node(t_block *node, int i);
 void	DEBUG_calling_free_message();
-void	DEBUG_adress_to_free(void *addr);
+void	DEBUG_address_to_free(void *addr);
 void	DEBUG_free_current_addr(void *ptr, size_t i);
 void	DEBUG_print_info_node(size_t i);
+void	DEBUG_show_ret_mmap(int ret);
+void	DEBUG_print_ctrl_g_block(t_block *ctrl, t_block *g_block);
 
 #endif

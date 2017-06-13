@@ -1,7 +1,7 @@
 #include "../include/malloc.h"
 
 t_block	*g_block = NULL;
-t_ctrl	*ctrl = NULL;
+t_block	*ctrl = NULL;
 
 /*void	*realloc(void *ptr, size_t size)*/
 /*{*/
@@ -16,7 +16,7 @@ void	free(void *addr)
 
 	tmp = g_block;
 	DEBUG_calling_free_message();
-	DEBUG_adress_to_free(addr);
+	DEBUG_address_to_free(addr);
 	while (tmp)
 	{
 		/*RC;*/
@@ -36,31 +36,24 @@ void	free(void *addr)
 		/*ft_putendl("next");*/
 		++DEBUG_i;
 	}
-	ft_putendl(END"");
+	if (DEBUG_ADDRESS_TO_FREE == 1)
+		ft_putendl(END"");
 }
 
-void	setup_node(size_t size, t_block *node)
+bool	alloc_ptr_node(size_t size, t_block *node)
 {
 	if (size <= TINY)
-	{
 		node->ptr = mmap(0, TINY, PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
-		node->flag = 't';
-	}
 	else if (size <= SMALL)
-	{
 		node->ptr = mmap(0, SMALL, PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
-		node->flag = 's';
-	}
 	else
-	{
-		node->flag = 'l';
 		node->ptr = mmap(0, size, PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
-	}
 	if (node->ptr == MAP_FAILED)
 	{
-		ft_putstr_fd("MMAP FAILED TO ALLOCATE PTR : ",2);
-		ft_putendl_fd(strerror(errno),2);
-		exit (-1);
+		DEBUG_show_ret_mmap((int)node->ptr);
+		ft_putstr_fd("MMAP FAILED TO ALLOCATE PTR : ", 2);
+		ft_putendl_fd(strerror(errno), 2);
+		return (false);
 	}
 	if (size <= TINY)
 		ft_memset(node->ptr, 0, TINY);
@@ -68,7 +61,7 @@ void	setup_node(size_t size, t_block *node)
 		ft_memset(node->ptr, 0, SMALL);
 	else
 		ft_memset(node->ptr, 0, size);
-	node->size = 0;
+	return (true);
 }
 
 void	*create_node()
@@ -78,32 +71,42 @@ void	*create_node()
 	tmp = mmap(0, sizeof(t_block), PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
 	if (tmp == MAP_FAILED)
 	{
+		DEBUG_show_ret_mmap((int)tmp->ptr);
 		ft_putstr_fd("MMAP FAILED TO ALLOCATE NEW NODE : ",2);
 		ft_putendl_fd(strerror(errno),2);
-		exit (-1);
+		return (NULL);
 	}
 	memset(tmp, 0, sizeof(t_block));
-	tmp->next = NULL;
 	return (tmp);
 }
 
-void	lst_push_back(size_t size)
+bool	lst_push_back(size_t size)
 {
 	t_block	*tmp;
 
 	tmp = g_block;
-	if (tmp == NULL)
+	if (g_block == NULL)
 	{
-		g_block = create_node();
-		setup_node(size, g_block);
+		ft_putendl("if");
+		if ((g_block = create_node()) == NULL)
+			return (false);
+		if ((alloc_ptr_node(size, g_block)) == false)
+			return (NULL);
+		ctrl = g_block;
+		DEBUG_print_node(g_block, 1);
+		sleep(3);
 	}
 	else
 	{
+		ft_putendl("else");
 		while (tmp->next)
 			tmp = tmp->next;
-		tmp->next = create_node();
-		setup_node(size, tmp);
+		if ((tmp->next = create_node()) == NULL)
+			return (false);
+		if ((alloc_ptr_node(size, tmp->next)) == false)
+			return (NULL);
 	}
+	return (true);
 }
 
 bool	check_list_filled()
@@ -118,20 +121,12 @@ bool	check_list_filled()
 	return (LST_NOT_FULL);
 }
 
-void	*alloc_tiny_small(size_t size)
+void	*init_node(size_t size)
 {
 	t_block	*tmp;
-	int i = 0;
 
-	if (g_block == NULL || check_list_filled() == LST_FULL)
-	{
-		while (i < NB_ZONES)
-		{
-			lst_push_back(size);
-			++i;
-		}
-	}
 	tmp = g_block;
+	DEBUG_print_ctrl_g_block(ctrl, g_block);
 	while (tmp->next && tmp->free == 1)
 		tmp = tmp->next;
 	tmp->free = 1;
@@ -145,6 +140,22 @@ void	*alloc_tiny_small(size_t size)
 	return (tmp->ptr);
 }
 
+void	*alloc_tiny_small(size_t size)
+{
+	int i = 0;
+
+	if (g_block == NULL || check_list_filled() == LST_FULL)
+	{
+		while (i < NB_ZONES)
+		{
+			if (lst_push_back(size) == false)
+				return (NULL);
+			++i;
+		}
+	}
+	return (init_node(size));
+}
+
 
 void	*malloc(size_t size)
 {
@@ -153,9 +164,9 @@ void	*malloc(size_t size)
 
 	DEBUG_calling_malloc();
 	/*if (size <= SMALL)*/
-		return (alloc = alloc_tiny_small(size));
+		alloc = alloc_tiny_small(size);
 	/*else*/
 		/*return (alloc_large(size));*/
-	return (alloc);
 	DEBUG_print_info_node(DEBUG_iter_malloc_call);
+	return (alloc);
  }
