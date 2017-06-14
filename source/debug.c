@@ -1,6 +1,7 @@
 #include "../include/malloc.h"
 
-extern t_block	*g_block;
+extern t_block	*g_tiny;
+extern t_block	*g_small;
 
 void	DEBUG_calling_malloc()
 {
@@ -14,42 +15,112 @@ void	DEBUG_calling_malloc()
 	++iter;
 }
 
-void	DEBUG_print_node(t_block *node, int i)
+void	DEBUG_print_node(t_block *tiny, t_block *small, int i)
 {
 	if (DEBUG_PRINT_NODE == 0)
 		return ;
-	ft_putstr(ORANGE"Node ");
-	ft_putnbr(i);
-	ft_putendl(" :");
+	if (tiny)
+	{
+		ft_putstr(ORANGE"Tiny Node ");
+		ft_putnbr(i);
+		ft_putstr(" :");
+		if (!small)
+			RC;
+	}
+	if (small)
+	{
+		ft_putstr(ORANGE"			SMALL Node ");
+		ft_putnbr(i);
+		ft_putstr(" :\n");
+	}
 
-	ft_putstr(CYAN"size = ");
-	ft_putnbr(node->size);
-	ft_putendl("");
+	if (tiny)
+	{
+		ft_putstr(CYAN"size = ");
+		ft_putnbr(tiny->size);
+		if (!small)
+			RC;
+	}
+	if (small)
+	{
+		ft_putstr(CYAN"			size = ");
+		ft_putnbr(small->size);
+		ft_putendl("");
+	}
 
-	ft_putstr(PURPLE"ptr = ");
-	print_hexa((unsigned long)node->ptr);
-	ft_putendl("");
+	if (tiny)
+	{
+		ft_putstr(PURPLE"tiny->ptr = ");
+		print_hexa((unsigned long)tiny->ptr);
+		if (!small)
+			RC;
+	}
+	if (small)
+	{
+		ft_putstr(PURPLE"		small->ptr = ");
+		print_hexa((unsigned long)small->ptr);
+		ft_putendl("");
+	}
 	
-	ft_putstr(YELLOW"free = ");
-	ft_putnbr(node->free);
-	ft_putendl("");
-
-	ft_putstr(GREY"flag = ");
-	if (node->flag == 't')
-		ft_putendl("TINY");
-	else if (node->flag == 's')
-		ft_putendl("SMALL");
-	else if (node->flag == 'l')
-		ft_putendl("LARGE");
-	else
-		ft_putendl(RED"Not set"END);
-
-	ft_putstr(PINK"next = ");
-	if (node->next)
-		ft_putendl("NOT NULL");
-	else
-		ft_putendl("NULL");
-
+	if (tiny)
+	{
+		ft_putstr(YELLOW"free = ");
+		ft_putnbr(tiny->free);
+		if (!small)
+			RC;
+	}
+	if (small)
+	{
+		ft_putstr(YELLOW"			free = ");
+		ft_putnbr(small->free);
+		ft_putendl("");
+	}
+	
+	if (tiny)
+	{
+		ft_putstr(GREY"flag = ");
+		if (tiny->flag == 't')
+			ft_putstr("TINY");
+		else if (tiny->flag == 's')
+			ft_putstr("SMALL");
+		else if (tiny->flag == 'l')
+			ft_putstr("LARGE");
+		else
+			ft_putstr(RED"Not set"END);
+		if (!small)
+			RC;
+	}
+	if (small)
+	{
+		ft_putstr(GREY"			flag = ");
+		if (small->flag == 't')
+			ft_putendl("TINY");
+		else if (small->flag == 's')
+			ft_putendl("SMALL");
+		else if (small->flag == 'l')
+			ft_putendl("LARGE");
+		else
+			ft_putendl(RED"Not set"END);
+	}
+	
+	if (tiny)
+	{
+		ft_putstr(PINK"next = ");
+		if (tiny->next)
+			ft_putstr("NOT NULL");
+		else
+			ft_putstr("NULL");
+		if (!small)
+			RC;
+	}
+	if (small)
+	{
+		ft_putstr(PINK"			next = ");
+		if (small->next)
+			ft_putendl("NOT NULL");
+		else
+			ft_putendl("NULL");
+	}
 	ft_putendl(""END);
 }
 
@@ -86,16 +157,18 @@ void	DEBUG_print_info_node(size_t i)
 {
 	if (DEBUG_PRINT_INFO_NODE == 0)
 		return ;
-	t_block	*tmp;
-	
-	if (g_block == NULL)
-		ft_putendl("NULL");
-	tmp = g_block;
+	t_block	*tmp_tiny = g_tiny;
+	t_block	*tmp_small = g_small;
+
 	ft_putendl(RED"============================================================="END);
-	while (tmp/* && tmp->free == 1*/)
+	while (tmp_tiny->next/* && tmp->free == 1*/)
 	{
-		DEBUG_print_node(tmp, i);
-		tmp = tmp->next;
+		DEBUG_print_node(tmp_tiny, tmp_small, i);
+		if (tmp_tiny->next)
+			tmp_tiny = tmp_tiny->next;
+		if (g_small)
+			if (tmp_small->next)
+				tmp_small = tmp_small->next;
 		++i;
 	}
 }
@@ -129,7 +202,7 @@ void	DEBUG_show_ret_mmap(int ret)
 	ft_putendl("");
 }
 
-void	DEBUG_print_ctrl_g_block(t_block *ctrl, t_block *g_block)
+void	DEBUG_print_ctrl_g_tiny(t_block *ctrl, t_block *g_block)
 {
 	if (DEBUG_PRINT_CTRL_G_BLOCK == 0)
 		return ;

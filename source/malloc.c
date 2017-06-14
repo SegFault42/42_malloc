@@ -1,6 +1,7 @@
 #include "../include/malloc.h"
 
-t_block	*g_block = NULL;
+t_block	*g_tiny = NULL;
+t_block	*g_small = NULL;
 t_block	*ctrl = NULL;
 
 /*void	*realloc(void *ptr, size_t size)*/
@@ -11,33 +12,34 @@ t_block	*ctrl = NULL;
 
 void	free(void *addr)
 {
-	t_block	*tmp;
-	size_t	DEBUG_i = 1;
+	/*t_block	*tmp;*/
+	/*size_t	DEBUG_i = 1;*/
 
-	tmp = g_block;
-	DEBUG_calling_free_message();
-	DEBUG_address_to_free(addr);
-	while (tmp)
-	{
-		/*RC;*/
-		DEBUG_free_current_addr(tmp->ptr, DEBUG_i);
-		if (tmp->ptr == addr)
-		{
-			/*ft_putstr(YELLOW"");*/
-			/*print_hexa((unsigned long)tmp->ptr);*/
-			/*ft_putendl("tmp->ptr = addr");*/
-			tmp->free = 0;
-			/*tmp->ptr = NULL;*/
-			tmp->size = 0;
-			tmp->flag = 0;
-			break ;
-		}
-		tmp = tmp->next;
-		/*ft_putendl("next");*/
-		++DEBUG_i;
-	}
-	if (DEBUG_ADDRESS_TO_FREE == 1)
-		ft_putendl(END"");
+	/*tmp = g_tiny;*/
+	/*DEBUG_calling_free_message();*/
+	/*DEBUG_address_to_free(addr);*/
+	/*while (tmp)*/
+	/*{*/
+		/*[>RC;<]*/
+		/*DEBUG_free_current_addr(tmp->ptr, DEBUG_i);*/
+		/*if (tmp->ptr == addr)*/
+		/*{*/
+			/*[>ft_putstr(YELLOW"");<]*/
+			/*[>print_hexa((unsigned long)tmp->ptr);<]*/
+			/*[>ft_putendl("tmp->ptr = addr");<]*/
+			/*tmp->free = 0;*/
+			/*[>tmp->ptr = NULL;<]*/
+			/*tmp->size = 0;*/
+			/*tmp->flag = 0;*/
+			/*break ;*/
+		/*}*/
+		/*tmp = tmp->next;*/
+		/*[>ft_putendl("next");<]*/
+		/*++DEBUG_i;*/
+	/*}*/
+	/*if (DEBUG_ADDRESS_TO_FREE == 1)*/
+		/*ft_putendl(END"");*/
+		(void)addr;
 }
 
 bool	alloc_ptr_node(size_t size, t_block *node)
@@ -84,21 +86,32 @@ bool	lst_push_back(size_t size)
 {
 	t_block	*tmp;
 
-	tmp = g_block;
-	if (g_block == NULL)
+	tmp = NULL;
+	if (size <= TINY)
+		tmp = g_tiny;
+	else if (size <= SMALL)
+		tmp = g_small;
+	if (tmp == NULL)
 	{
-		ft_putendl("if");
-		if ((g_block = create_node()) == NULL)
-			return (false);
-		if ((alloc_ptr_node(size, g_block)) == false)
-			return (NULL);
-		ctrl = g_block;
-		DEBUG_print_node(g_block, 1);
-		sleep(3);
+		if (size <= TINY)
+		{
+			if ((g_tiny = create_node()) == NULL)
+				return (false);
+			if ((alloc_ptr_node(size, g_tiny)) == false)
+				return (NULL);
+		}
+		else if (size <= SMALL)
+		{
+			if ((g_small = create_node()) == NULL)
+				return (false);
+			if ((alloc_ptr_node(size, g_small)) == false)
+				return (NULL);
+		}
+		/*DEBUG_print_node(tmp, 1);*/
+		/*sleep(3);*/
 	}
 	else
 	{
-		ft_putendl("else");
 		while (tmp->next)
 			tmp = tmp->next;
 		if ((tmp->next = create_node()) == NULL)
@@ -109,11 +122,15 @@ bool	lst_push_back(size_t size)
 	return (true);
 }
 
-bool	check_list_filled()
+bool	check_list_filled(size_t size)
 {
 	t_block	*tmp;
 
-	tmp = g_block;
+	tmp = NULL;
+	if (size <= TINY)
+		tmp = g_tiny;
+	else if (size <= SMALL)
+		tmp = g_small;
 	while (tmp->next && tmp->free == 1)
 		tmp = tmp->next;
 	if (tmp->next == NULL)
@@ -125,8 +142,11 @@ void	*init_node(size_t size)
 {
 	t_block	*tmp;
 
-	tmp = g_block;
-	DEBUG_print_ctrl_g_block(ctrl, g_block);
+	tmp = NULL;
+	if (size <= TINY)
+		tmp = g_tiny;
+	else if (size <= SMALL)
+		tmp = g_small;
 	while (tmp->next && tmp->free == 1)
 		tmp = tmp->next;
 	tmp->free = 1;
@@ -144,14 +164,25 @@ void	*alloc_tiny_small(size_t size)
 {
 	int i = 0;
 
-	if (g_block == NULL || check_list_filled() == LST_FULL)
+	if (size <= TINY)
 	{
-		while (i < NB_ZONES)
-		{
-			if (lst_push_back(size) == false)
-				return (NULL);
-			++i;
-		}
+		if (g_tiny == NULL || check_list_filled(size) == LST_FULL)
+			while (i < NB_ZONES)
+			{
+				if (lst_push_back(size) == false)
+					return (NULL);
+				++i;
+			}
+	}
+	else if (size <= SMALL)
+	{
+		if (g_small == NULL || check_list_filled(size) == LST_FULL)
+			while (i < NB_ZONES)
+			{
+				if (lst_push_back(size) == false)
+					return (NULL);
+				++i;
+			}
 	}
 	return (init_node(size));
 }

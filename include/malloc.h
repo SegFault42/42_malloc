@@ -53,12 +53,12 @@ typedef struct		s_ctrl
 }					t_ctrl;
 
 void	DEBUG_calling_malloc();
-void	DEBUG_print_node(t_block *node, int i);
+void	DEBUG_print_node(t_block *node, t_block * node2, int i);
 void	DEBUG_calling_free_message();
 void	DEBUG_address_to_free(void *addr);
 void	DEBUG_free_current_addr(void *ptr, size_t i);
 void	DEBUG_print_info_node(size_t i);
 void	DEBUG_show_ret_mmap(int ret);
-void	DEBUG_print_ctrl_g_block(t_block *ctrl, t_block *g_block);
+void	DEBUG_print_ctrl_g_tiny(t_block *ctrl, t_block *g_block);
 
 #endif

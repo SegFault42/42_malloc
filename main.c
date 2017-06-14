@@ -1,6 +1,8 @@
 /*#include <stdio.h>*/
-/*#include <string.h>*/
+#include <string.h>
 /*#include <stdlib.h>*/
+#include <unistd.h>
+#include "./include/malloc.h"
 
 /*#define SIZE 125*/
 
@@ -8,7 +10,7 @@ int	main()
 {
 	/*char *str = malloc(sizeof(char) * SIZE);*/
 	/*char *str1 = malloc(sizeof(char) * 3);*/
-	/*char *str2 = malloc(sizeof(char) * 100);*/
+	char *str2 = malloc(sizeof(char) * 100);
 	/*char *str3 = malloc(sizeof(char) * 62);*/
 	/*char *str4 = malloc(sizeof(char) * 45);*/
 	/*char *str5 = malloc(sizeof(char) * 1170);*/
