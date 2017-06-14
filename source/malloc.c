@@ -12,33 +12,33 @@ t_block	*ctrl = NULL;
 
 void	free(void *addr)
 {
-	/*t_block	*tmp;*/
-	/*size_t	DEBUG_i = 1;*/
+	t_block	*tmp;
+	size_t	DEBUG_i = 1;
 
-	/*tmp = g_tiny;*/
-	/*DEBUG_calling_free_message();*/
-	/*DEBUG_address_to_free(addr);*/
-	/*while (tmp)*/
-	/*{*/
-		/*[>RC;<]*/
-		/*DEBUG_free_current_addr(tmp->ptr, DEBUG_i);*/
-		/*if (tmp->ptr == addr)*/
-		/*{*/
-			/*[>ft_putstr(YELLOW"");<]*/
-			/*[>print_hexa((unsigned long)tmp->ptr);<]*/
-			/*[>ft_putendl("tmp->ptr = addr");<]*/
-			/*tmp->free = 0;*/
-			/*[>tmp->ptr = NULL;<]*/
-			/*tmp->size = 0;*/
-			/*tmp->flag = 0;*/
-			/*break ;*/
-		/*}*/
-		/*tmp = tmp->next;*/
-		/*[>ft_putendl("next");<]*/
-		/*++DEBUG_i;*/
-	/*}*/
-	/*if (DEBUG_ADDRESS_TO_FREE == 1)*/
-		/*ft_putendl(END"");*/
+	tmp = g_tiny;
+	DEBUG_calling_free_message();
+	DEBUG_address_to_free(addr);
+	while (tmp)
+	{
+		/*RC;*/
+		DEBUG_free_current_addr(tmp->ptr, DEBUG_i);
+		if (tmp->ptr == addr)
+		{
+			/*ft_putstr(YELLOW"");*/
+			/*print_hexa((unsigned long)tmp->ptr);*/
+			/*ft_putendl("tmp->ptr = addr");*/
+			tmp->free = 0;
+			/*tmp->ptr = NULL;*/
+			tmp->size = 0;
+			tmp->flag = 0;
+			break ;
+		}
+		tmp = tmp->next;
+		/*ft_putendl("next");*/
+		++DEBUG_i;
+	}
+	if (DEBUG_ADDRESS_TO_FREE == 1)
+		ft_putendl(END"");
 		(void)addr;
 }
 
