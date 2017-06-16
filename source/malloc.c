@@ -15,15 +15,18 @@ size_t	print_data_mem(t_block *zone)
 	size_t	total;
 
 	total = 0;
-	while (zone && zone->free == 1)
+	while (zone)
 	{
-		print_hexa((unsigned int)zone->ptr);
-		ft_putstr(" - ");
-		print_hexa((unsigned int)zone->ptr + zone->size);
-		ft_putstr(" : ");
-		ft_putnbr(zone->size);
-		ft_putendl(" octets");
-		total += zone->size;
+		if (zone->free == 1)
+		{
+			print_hexa((unsigned int)zone->ptr);
+			ft_putstr(" - ");
+			print_hexa((unsigned int)zone->ptr + zone->size);
+			ft_putstr(" : ");
+			ft_putnbr(zone->size);
+			ft_putendl(" octets");
+			total += zone->size;
+		}
 		zone = zone->next;
 	}
 	return (total);

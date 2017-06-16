@@ -23,7 +23,8 @@ int	main()
 	char *str5 = malloc(sizeof(char) * 1170);
 	/*strcat(str3, "Hello !\n");*/
 	/*write(1, str3, strlen(str3));*/
-	/*free(str3);*/
+	free(str3);
+	char *str44 = malloc(sizeof(char) * 42);
 	/*write(1, str3, strlen(str3));*/
 	/*str3 = malloc(sizeof(char) * 10);*/
 	/*write(1, str3, strlen(str3));*/
