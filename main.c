@@ -8,35 +8,27 @@
 
 int	main()
 {
-	char *test = malloc(10000000);
-	if (test == NULL)
-		ft_putstr("NULL");
-	/*test[0] = 'a';*/
-	/*test[1] = '\n';*/
-	/*ft_putstr(test);*/
-	/*free(test1);*/
-	char *str = malloc(sizeof(char) * SIZE);
-	char *str1 = malloc(sizeof(char) * 3);
-	char *str2 = malloc(sizeof(char) * 100);
-	char *str3 = malloc(sizeof(char) * 62);
-	char *str4 = malloc(sizeof(char) * 45);
-	char *str5 = malloc(sizeof(char) * 1170);
-	/*strcat(str3, "Hello !\n");*/
-	/*write(1, str3, strlen(str3));*/
-	free(str3);
-	char *str44 = malloc(sizeof(char) * 42);
-	/*write(1, str3, strlen(str3));*/
-	/*str3 = malloc(sizeof(char) * 10);*/
-	/*write(1, str3, strlen(str3));*/
-	/*if (str == NULL)*/
-	/*{*/
-		/*[>printf("NULL\n");<]*/
-		/*return ((int)NULL);*/
-	/*}*/
-	/*for (int i = 0; i < SIZE; ++i)*/
-		/*strcat(str, "l");*/
-	/*write(1, str, strlen(str));*/
-	/*write(1, "\n", 1);*/
+
+	char *test1 = (char *)malloc(sizeof(char) * 1101);
+	char *test2 = (char *)malloc(sizeof(char) * 1102);
+	char *test3 = (char *)malloc(sizeof(char) * 1103);
+	char *test4 = (char *)malloc(sizeof(char) * 1104);
+	char *test5 = (char *)malloc(sizeof(char) * 1105);
+	free(test1);
+	free(test2);
+	free(test3);
+	free(test4);
+	char *test6 = (char *)malloc(sizeof(char) * 1106);
+	char *test7 = (char *)malloc(sizeof(char) * 1107);
+	char *test8 = (char *)malloc(sizeof(char) * 1108);
+	char *test9 = (char *)malloc(sizeof(char) * 1109);
+	char *test10 = (char *)malloc(sizeof(char) * 1110);
+	free(test5);
+	free(test6);
+	free(test7);
+	free(test8);
+	free(test9);
+	free(test10);
 	show_alloc_mem();
 }
 

@@ -25,9 +25,9 @@
 # define SMALL			256
 # define LST_FULL		1
 # define LST_NOT_FULL	0
-# define NB_ZONES		128
+# define NB_ZONES		1
 
-# define DEBUG_CALLING_MALLOC		0
+# define DEBUG_CALLING_MALLOC		1
 # define DEBUG_PRINT_NODE			0
 # define DEBUG_CALLING_FREE_MESSAGE	0
 # define DEBUG_ADDRESS_TO_FREE		0

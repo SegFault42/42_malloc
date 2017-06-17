@@ -19,13 +19,13 @@ size_t	print_data_mem(t_block *zone)
 	{
 		if (zone->free == 1)
 		{
-			print_hexa((unsigned int)zone->ptr);
-			ft_putstr(" - ");
-			print_hexa((unsigned int)zone->ptr + zone->size);
-			ft_putstr(" : ");
-			ft_putnbr(zone->size);
-			ft_putendl(" octets");
-			total += zone->size;
+		print_hexa((unsigned int)zone->ptr);
+		ft_putstr(" - ");
+		print_hexa((unsigned int)zone->ptr + zone->size);
+		ft_putstr(" : ");
+		ft_putnbr(zone->size);
+		ft_putendl(" octets");
+		total += zone->size;
 		}
 		zone = zone->next;
 	}
@@ -220,7 +220,24 @@ bool	lst_push_back(size_t size)
 	else
 	{
 		while (tmp->next)
+		{
+			if (tmp->free == 0 && tmp->next)
+			{
+				if ((alloc_ptr_node(size, tmp)) == false)
+					return (false);
+				return (true);
+			}
+			else if (tmp->free == 1 && !(tmp->next))
+			{
+				if ((tmp->next = create_node()) == NULL)
+					return (false);
+				if ((alloc_ptr_node(size, tmp->next)) == false)
+					return (false);
+				return (true);
+			}
 			tmp = tmp->next;
+		}
+		ft_putstr("lol\n");
 		if ((tmp->next = create_node()) == NULL)
 			return (false);
 		if ((alloc_ptr_node(size, tmp->next)) == false)
