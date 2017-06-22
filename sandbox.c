@@ -5,19 +5,46 @@
 #include <string.h>
 #include <unistd.h>
 
-void	free(void *lol)
+typedef struct		s_test
 {
-	(void)lol;
+	struct s_test	*next;
+	size_t			size;
+	void			*ptr;
+	bool			free;
+	char			flag;
+	char			pad[6];
+}					t_test;
+
+void	init_node(size_t size, t_test *node)
+{
+	node->size = size;
+	node->free = 1;
+	node->next = NULL;
 }
 
-void	*malloc(size_t size)
+int	main()
 {
-	static char i = 'a';
+	t_test	*page = mmap(0, 4096, PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
 
-	write(1, &i, 1);
-	write(1, "\n", 1);
-	++i;
-	void *node = mmap(0, size, PROT_READ | PROT_WRITE, MAP_ANON | MAP_PRIVATE, -1, 0);
-	return (node);
+	t_test	*node = page;
+	t_test	*tmp = node;
+	init_node(0, node);
+	printf("%d, %p\n", 0, node);
+	++node;
+	for (int i = 1; i < 128; ++i)
+	{
+		tmp->next = node;
+		init_node(i, node);
+		printf("%d, %p\n", i, node);
+		++node;
+		++tmp;
+	}
+	printf("lol\n");
+	t_test *tmp_2 = page;
+	while (tmp_2)
+	{
+		printf("%zu ", tmp_2->size);
+		printf("%p\n", tmp_2);
+		tmp_2 = tmp_2->next;
+	}
 }
-

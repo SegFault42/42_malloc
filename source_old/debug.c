@@ -13,8 +13,8 @@ void	DEBUG_calling_malloc()
 	ft_putstr(WHITE"Calling malloc ");
 	ft_putnbr(iter);
 	ft_putstr(" time\n"END);
-	if (iter == 1)
-		sleep(1);
+	/*if (iter == 1)*/
+		/*sleep(1);*/
 	++iter;
 }
 

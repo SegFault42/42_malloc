@@ -22,10 +22,10 @@ END = \033[0m
 ##################################_COMPILATION_#################################
 NAME = libft_malloc_$(HOSTTYPE).so
 CC = gcc
+#FLAG = -Weverything -g
 FLAG = -Wall -Wextra -Werror -g
 LFT = ./libft/libft.a
 SRCS =	./source/malloc.c\
-		./source/debug.c
 
 OBJS = $(SRCS:.c=.o)
 
