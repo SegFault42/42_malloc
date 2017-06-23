@@ -8,7 +8,8 @@
 
 int	main()
 {
-	/*char *test4 = malloc(10);*/
+	char *test4 = malloc(1000);
+
 	/*show_alloc_mem();*/
 	/*RC;*/
 }

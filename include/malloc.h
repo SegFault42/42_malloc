@@ -27,6 +27,8 @@
 # define LST_NOT_FULL	0
 # define NB_ZONES		128
 
+# define PROT			PROT_READ | PROT_WRITE
+# define FLAG			MAP_ANON | MAP_PRIVATE
 
 typedef struct		s_block
 {
@@ -37,5 +39,7 @@ typedef struct		s_block
 	char			flag;		// flag size (tiny, small or large)
 	char			pad[6];		// variable for padding
 }					t_block;
+
+void	DEBUG_print_allocated_zones();
 
 #endif
