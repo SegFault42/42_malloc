@@ -112,35 +112,6 @@ void	fill_lst(char flag)
 	}
 }
 
-void	fill_lst_large()
-{
-	t_block	*tmp;
-	t_block	*tmp_2;
-
-	size_t	i;
-
-	i = 1;
-	tmp = meta_large;
-	tmp_2 = meta_large;
-	if (meta_large == NULL)
-	{
-		tmp->ptr = g_large_data;
-		tmp->flag = 'l';
-	}
-	else
-	{
-		while (tmp->next && tmp->free == 1)
-		{
-			tmp = tmp->next;
-			++i;
-		}
-		tmp_2 += i;
-		tmp->next = tmp_2;
-		tmp_2->ptr = g_large_data;
-		tmp_2->flag = 'l';
-	}
-}
-
 void	*alloc_tiny_small(size_t size)
 {
 	t_block	*tmp;
@@ -177,22 +148,108 @@ void	*alloc_tiny_small(size_t size)
 	return (tmp->ptr);
 }
 
+void	fill_lst_large(size_t ptr)
+{
+	t_block	*tmp;
+	t_block	*tmp_2;
+
+	size_t	i;
+
+	i = 1;
+	tmp = meta_large;
+	tmp_2 = meta_large;
+	while (tmp->next && tmp->free == 1)
+	{
+		tmp = tmp->next;
+		++i;
+	}
+	tmp_2 += i;
+	tmp->next = tmp_2;
+		tmp->ptr = g_large_data + ptr;
+		/*print_hexa((unsigned int)tmp->ptr);*/
+		/*RC;*/
+		/*RC;*/
+	tmp->flag = 'l';
+}
+
+size_t	check_if_alloc_fill(size_t size)
+{
+	t_block	*tmp;
+	size_t	begin_page;
+	size_t	i;
+	size_t	size_alloc_in_page;
+
+	begin_page = 1;
+	i = 1;
+	tmp = meta_large;
+	size_alloc_in_page = 0;
+	while (tmp->next && tmp->free == 1)
+	{
+		if ((int)tmp->ptr % getpagesize() == 0)
+			begin_page = i;
+		++i;
+		tmp = tmp->next;
+	}
+	tmp = meta_large;
+	i = 1;
+	while (i < begin_page)
+	{
+		tmp = tmp->next;
+		++i;
+	}
+	while (tmp->next && tmp->free == 1)
+	{
+		size_alloc_in_page += tmp->size;
+		tmp = tmp->next;
+		ft_putnbr(size_alloc_in_page);
+		RC;
+	}
+		RC;
+	/*if (begin_page == 1)*/
+		/*size_alloc_in_page = tmp->size;*/
+		ft_putstr("somme = ");
+		ft_putnbr(getpagesize() - size_alloc_in_page);
+		RC;
+	if (getpagesize() - size_alloc_in_page >= size)
+	{
+		ft_putstr("saip = ");
+		ft_putnbr(size_alloc_in_page);
+		RC;
+		return (size_alloc_in_page);
+	}
+	return (0);
+}
 
 void	*alloc_large(size_t size)
 {
 	t_block	*tmp;
+	size_t	addr_ok;
 
 	tmp = meta_large;
+	addr_ok = 0;
 	if (meta_large == NULL)
 	{
 		if ((meta_large = alloc_meta()) == NULL)
 			return (NULL);
 		if (alloc_data(size) == false)
 			return (NULL);
-		fill_lst_large();
+		fill_lst_large(0);
+		tmp = meta_large;
 	}
-	while (tmp->next && tmp->free == 1)
-		tmp = tmp->next;
+	else
+	{
+		while (tmp->next && tmp->free == 1)
+			tmp = tmp->next;
+		if ((addr_ok = check_if_alloc_fill(size)) == 0)
+		{
+			ft_putendl("q");
+			if (alloc_data(size) == false)
+				return (NULL);
+			fill_lst_large(0);
+		}
+		else
+			fill_lst_large(addr_ok);
+	}
 	tmp->free = 1;
 	tmp->size = size;
 	return (tmp->ptr);
@@ -206,9 +263,10 @@ void	*malloc(size_t size)
 	if (size <= SMALL)
 		allocation_familliale = alloc_tiny_small(size);
 	else
+	{
 		allocation_familliale = alloc_large(size);
+	}
 
 	DEBUG_print_allocated_zones();
-
 	return (allocation_familliale);
 }
