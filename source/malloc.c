@@ -7,6 +7,21 @@ void	*g_tiny_data = NULL;
 void	*g_small_data = NULL;
 void	*g_large_data = NULL;
 
+bool	check_if_meta_full(size_t size)
+{
+	t_block	*tmp;
+
+	if (size <= TINY)
+		tmp = meta_tiny;
+	else
+		tmp = meta_small;
+	while (tmp->next && tmp->free == 1)
+		tmp = tmp->next;
+	if (tmp->next == NULL)
+		return (LST_FULL);
+	return (LST_NOT_FULL);
+}
+
 size_t	print_data_mem(t_block *zone)
 {
 	size_t	total;
@@ -147,12 +162,16 @@ void	fill_lst(char flag)
 	if (flag == 't')
 	{
 		tmp = meta_tiny;
-		tmp_2 = meta_tiny;
+		while (tmp->next)
+			tmp = tmp->next;
+		tmp_2 = tmp;
 	}
 	else if (flag == 's')
 	{
 		tmp = meta_small;
-		tmp_2 = meta_small;
+		while (tmp->next)
+			tmp = tmp->next;
+		tmp_2 = tmp;
 	}
 	init_node(tmp, flag, i);
 	++i;
@@ -182,6 +201,17 @@ void	*alloc_tiny_small(size_t size)
 				return (NULL);
 			fill_lst('t');
 		}
+		else if (check_if_meta_full(size) == LST_FULL)
+		{
+			tmp = meta_tiny;
+			while (tmp->next)
+				tmp = tmp->next;
+			if ((tmp->next = alloc_meta()) == NULL)
+				return (NULL);
+			if (alloc_data(size) == false)
+				return (NULL);
+			fill_lst('t');
+		}
 		tmp = meta_tiny;
 	}
 	else if (size <= SMALL)
@@ -189,6 +219,17 @@ void	*alloc_tiny_small(size_t size)
 		if (meta_small == NULL)
 		{
 			if ((meta_small = alloc_meta()) == NULL)
+				return (NULL);
+			if (alloc_data(size) == false)
+				return (NULL);
+			fill_lst('s');
+		}
+		else if (check_if_meta_full(size) == LST_FULL)
+		{
+			tmp = meta_small;
+			while (tmp->next)
+				tmp = tmp->next;
+			if ((tmp->next = alloc_meta()) == NULL)
 				return (NULL);
 			if (alloc_data(size) == false)
 				return (NULL);
@@ -221,7 +262,8 @@ void	fill_lst_large(size_t ptr)
 	tmp->next = tmp_2;
 	tmp->ptr = g_large_data + ptr;
 	tmp->flag = 'l';
-	tmp_2->next = NULL;
+	/*if (tmp_2)*/
+		/*tmp_2->next = NULL;*/
 }
 
 size_t	check_if_alloc_fill(size_t size)
@@ -242,6 +284,7 @@ size_t	check_if_alloc_fill(size_t size)
 		++i;
 		tmp = tmp->next;
 	}
+		ft_putendl("a");
 	tmp = meta_large;
 	i = 1;
 	while (i < begin_page)
@@ -255,7 +298,9 @@ size_t	check_if_alloc_fill(size_t size)
 		tmp = tmp->next;
 	}
 	if (getpagesize() - size_alloc_in_page >= size)
+	{
 		return (size_alloc_in_page);
+	}
 	return (0);
 }
 
@@ -277,11 +322,8 @@ void	*alloc_large(size_t size)
 	}
 	else
 	{
-		while (tmp->next && tmp->free == 1)
-			tmp = tmp->next;
 		if ((addr_ok = check_if_alloc_fill(size)) == 0)
 		{
-			/*ft_putendl("q");*/
 			if (alloc_data(size) == false)
 				return (NULL);
 			fill_lst_large(0);
@@ -289,6 +331,12 @@ void	*alloc_large(size_t size)
 		else
 			fill_lst_large(addr_ok);
 	}
+		while (tmp->next && tmp->free == 1)
+		{
+			tmp = tmp->next;
+			/*print_hexa((unsigned int )tmp);*/
+			/*RC;*/
+		}
 	tmp->free = 1;
 	tmp->size = size;
 	return (tmp->ptr);
@@ -302,10 +350,8 @@ void	*malloc(size_t size)
 	if (size <= SMALL)
 		allocation_familliale = alloc_tiny_small(size);
 	else
-	{
 		allocation_familliale = alloc_large(size);
-	}
 
-	/*DEBUG_print_allocated_zones();*/
+	DEBUG_print_allocated_zones();
 	return (allocation_familliale);
 }
