@@ -41,5 +41,6 @@ typedef struct		s_block
 }					t_block;
 
 void	DEBUG_print_allocated_zones();
+void	show_alloc_mem();
 
 #endif

@@ -7,6 +7,61 @@ void	*g_tiny_data = NULL;
 void	*g_small_data = NULL;
 void	*g_large_data = NULL;
 
+size_t	print_data_mem(t_block *zone)
+{
+	size_t	total;
+
+	total = 0;
+	while (zone)
+	{
+		if (zone->free == 1)
+		{
+			print_hexa((unsigned int)zone->ptr);
+			ft_putstr(" - ");
+			print_hexa((unsigned int)zone->ptr + zone->size);
+			ft_putstr(" : ");
+			ft_putnbr(zone->size);
+			ft_putendl(" octets");
+			total += zone->size;
+		}
+		zone = zone->next;
+		/*print_hexa((unsigned int)zone);*/
+		/*RC;*/
+	}
+	return (total);
+}
+
+void	show_alloc_mem()
+{
+	size_t	total;
+
+	total = 0;
+	if (meta_tiny && meta_tiny->free == 1)
+	{
+		ft_putstr("TINY : ");
+		print_hexa((unsigned int)meta_tiny);
+		RC;
+		total += print_data_mem(meta_tiny);
+	}
+	if (meta_small && meta_small->free == 1)
+	{
+		ft_putstr("SMALL : ");
+		print_hexa((unsigned int)meta_small);
+		RC;
+		total += print_data_mem(meta_small);
+	}
+	if (meta_large && meta_large->free == 1)
+	{
+		ft_putstr("LARGE : ");
+		print_hexa((unsigned int)meta_large);
+		RC;
+		total += print_data_mem(meta_large);
+	}
+	ft_putstr("Total : ");
+	ft_putnbr(total);
+	ft_putendl(" octets");
+}
+
 void	free(void *addr)
 {
 	(void)addr;
@@ -152,7 +207,6 @@ void	fill_lst_large(size_t ptr)
 {
 	t_block	*tmp;
 	t_block	*tmp_2;
-
 	size_t	i;
 
 	i = 1;
@@ -165,11 +219,9 @@ void	fill_lst_large(size_t ptr)
 	}
 	tmp_2 += i;
 	tmp->next = tmp_2;
-		tmp->ptr = g_large_data + ptr;
-		/*print_hexa((unsigned int)tmp->ptr);*/
-		/*RC;*/
-		/*RC;*/
+	tmp->ptr = g_large_data + ptr;
 	tmp->flag = 'l';
+	tmp_2->next = NULL;
 }
 
 size_t	check_if_alloc_fill(size_t size)
@@ -201,22 +253,9 @@ size_t	check_if_alloc_fill(size_t size)
 	{
 		size_alloc_in_page += tmp->size;
 		tmp = tmp->next;
-		ft_putnbr(size_alloc_in_page);
-		RC;
 	}
-		RC;
-	/*if (begin_page == 1)*/
-		/*size_alloc_in_page = tmp->size;*/
-		ft_putstr("somme = ");
-		ft_putnbr(getpagesize() - size_alloc_in_page);
-		RC;
 	if (getpagesize() - size_alloc_in_page >= size)
-	{
-		ft_putstr("saip = ");
-		ft_putnbr(size_alloc_in_page);
-		RC;
 		return (size_alloc_in_page);
-	}
 	return (0);
 }
 
@@ -242,7 +281,7 @@ void	*alloc_large(size_t size)
 			tmp = tmp->next;
 		if ((addr_ok = check_if_alloc_fill(size)) == 0)
 		{
-			ft_putendl("q");
+			/*ft_putendl("q");*/
 			if (alloc_data(size) == false)
 				return (NULL);
 			fill_lst_large(0);
@@ -267,6 +306,6 @@ void	*malloc(size_t size)
 		allocation_familliale = alloc_large(size);
 	}
 
-	DEBUG_print_allocated_zones();
+	/*DEBUG_print_allocated_zones();*/
 	return (allocation_familliale);
 }
