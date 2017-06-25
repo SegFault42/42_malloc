@@ -17,6 +17,7 @@ void	DEBUG_print_allocated_zones()
 	ft_putstr("Malloc call = ");
 	ft_putnbr(i);
 	RC;
+
 	/*while (tmp->next && tmp->free == 1)*/
 	/*{*/
 		/*ft_putendl(GREEN"Tiny zone :");*/
