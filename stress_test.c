@@ -1,13 +1,13 @@
-/*#include "./include/malloc.h"*/
+#include "./include/malloc.h"
 #include <time.h>
-#include <stdlib.h>
+/*#include <stdlib.h>*/
 #include <ctype.h>
 #include <string.h>
 #include <unistd.h>
 
 #define RAND_TINY random = rand() % 64 + 1;
 #define RAND_SMALL random = rand() % 960+ 65;
-#define RAND_LARGE random = rand() % 2000 + 1025;
+#define RAND_LARGE random = rand() % RAND_MAX + 1025;
 /*#define RAND_LARGE random = 1024;*/
 #define RAND random = rand() % RAND_MAX + 1;
 
@@ -50,12 +50,10 @@ int	main(int argc, char **argv)
 		addr = (char *)malloc(random);
 		if (addr == NULL)
 		{
-			/*ft_putendl("addr = NULL");*/
-			exit(-1);
+			ft_putendl("addr = NULL");
+			return(-1);
 		}
-		/*else*/
-			addr[0] = 42;
 		/*show_alloc_mem();*/
 	}
-	/*show_alloc_mem();*/
+	show_alloc_mem();
 }

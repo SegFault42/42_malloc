@@ -104,8 +104,8 @@ size_t	print_data_mem(t_block *zone)
 			total += zone->size;
 		}
 		zone = zone->next;
-		print_hexa((unsigned int)zone);
-		RC;
+		/*print_hexa((unsigned int)zone);*/
+		/*RC;*/
 	}
 	RC;
 	return (total);
@@ -152,7 +152,7 @@ bool	alloc_data(size_t size)
 			ft_putstr_fd(strerror(errno), 2);
 			return (false);
 		}
-		ft_memset(g_tiny_data, 0, TINY * 128);
+		/*ft_memset(g_tiny_data, 0, TINY * 128);*/
 	}
 	else if (size <= SMALL)
 	{
@@ -162,7 +162,7 @@ bool	alloc_data(size_t size)
 			ft_putstr_fd(strerror(errno), 2);
 			return (false);
 		}
-		ft_memset(g_small_data, 0, SMALL * 128);
+		/*ft_memset(g_small_data, 0, SMALL * 128);*/
 	}
 	else
 	{
@@ -172,7 +172,7 @@ bool	alloc_data(size_t size)
 			ft_putstr_fd(strerror(errno), 2);
 			return (false);
 		}
-		ft_memset(g_large_data, 0, size);
+		/*ft_memset(g_large_data, 0, size);*/
 	}
 	return (true);
 }
@@ -410,9 +410,9 @@ void	*malloc(size_t size)
 	/*static size_t	nb_alloc_small = 0;*/
 	/*static size_t	nb_alloc_large = 0;*/
 
-	ft_putstr("Size = ");
-	ft_putnbr(size);
-	RC;
+	/*ft_putstr("Size = ");*/
+	/*ft_putnbr(size);*/
+	/*RC;*/
 	/*if (size <= TINY)*/
 		/*++nb_alloc_tiny;*/
 	/*else if (size <= SMALL)*/
