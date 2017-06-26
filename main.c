@@ -8,15 +8,22 @@
 /*Size = 1886574843*/
 /*Size = 67321540*/
 
+#define M (1024 * 1024)
 
 int	main()
 {
-	char *test1 = malloc(1714955948);
-	char *test2 = malloc(1886574843);
-	char *test3 = malloc(67321540);
-	printf("%u\n", RAND_MAX);
+	char *addr1 = malloc(16 * M);
+	strcpy(addr1, "Bonjours\n");
+	ft_putstr(addr1);
 
-	show_alloc_mem();
-	RC;
+	char *addr3 = (char*)malloc(10000);
+	addr3[127*M] = 42;
+	/*ft_putstr(addr3);*/
+	/*malloc(54 * 32);*/
+	/*malloc(54 * 54);*/
+	/*malloc(54 * 54 * 16);*/
+	/*malloc(54 * 54 * 128);*/
+	/*show_alloc_mem();*/
+	return (0);
 }
 

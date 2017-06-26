@@ -7,6 +7,13 @@ void	*g_tiny_data = NULL;
 void	*g_small_data = NULL;
 void	*g_large_data = NULL;
 
+/*void	*realloc(void *ptr, size_t size)*/
+/*{*/
+	/*void	*tmp;*/
+
+	/*tmp = ptr;*/
+/*}*/
+
 bool	look_for_addr(void *addr)
 {
 	t_block	*tmp;
@@ -313,7 +320,7 @@ void	fill_lst_large(size_t ptr)
 	i = 1;
 	tmp = meta_large;
 	tmp_2 = meta_large;
-	while (tmp->next && tmp->free == 1)
+	while (tmp && tmp->free == 1)
 	{
 		tmp = tmp->next;
 		++i;
@@ -338,7 +345,7 @@ size_t	check_if_alloc_fill(size_t size)
 	tmp = meta_large;
 	size_alloc_in_page = 0;
 	/*ft_putstr("a\n");*/
-	while (tmp->next && tmp->free == 1)
+	while (tmp && tmp->free == 1)
 	{
 		if ((int)tmp->ptr % getpagesize() == 0)
 			begin_page = i;
@@ -353,7 +360,7 @@ size_t	check_if_alloc_fill(size_t size)
 		tmp = tmp->next;
 		++i;
 	}
-	while (tmp->next && tmp->free == 1)
+	while (tmp && tmp->free == 1)
 	{
 		size_alloc_in_page += tmp->size;
 		tmp = tmp->next;
@@ -392,12 +399,12 @@ void	*alloc_large(size_t size)
 		else
 			fill_lst_large(addr_ok);
 	}
-		while (tmp->next && tmp->free == 1)
-		{
-			tmp = tmp->next;
-			/*print_hexa((unsigned int )tmp);*/
-			/*RC;*/
-		}
+	while (tmp && tmp->free == 1)
+	{
+		tmp = tmp->next;
+		/*print_hexa((unsigned int )tmp);*/
+		/*RC;*/
+	}
 	tmp->free = 1;
 	tmp->size = size;
 	return (tmp->ptr);

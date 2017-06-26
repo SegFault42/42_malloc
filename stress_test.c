@@ -53,6 +53,7 @@ int	main(int argc, char **argv)
 			ft_putendl("addr = NULL");
 			return(-1);
 		}
+		addr[0] = 42;
 		/*show_alloc_mem();*/
 	}
 	show_alloc_mem();
