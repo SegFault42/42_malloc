@@ -36,10 +36,8 @@ bool	look_for_addr(void *addr)
 void	free_large(void *addr)
 {
 	t_block	*tmp;
-	/*t_block	*tmp_2;*/
 
 	tmp = meta_large;
-	/*tmp_2 = meta_large;*/
 	while (tmp)
 	{
 		if (tmp->ptr == addr)
@@ -51,18 +49,9 @@ void	free_large(void *addr)
 			/*}*/
 			if (munmap(tmp->ptr, tmp->size) == -1)
 			{
-				ft_putstr_fd("munmap error : ", 2);
-				ft_putendl_fd(strerror(errno), 2);
-			}
-			/*tmp_2->next = tmp->next;*/
-			/*else*/
-				/*meta_large = NULL;*/
-			/*if (munmap(tmp, sizeof(t_block)) == -1)*/
-			/*{*/
 				/*ft_putstr_fd("munmap error : ", 2);*/
 				/*ft_putendl_fd(strerror(errno), 2);*/
-			/*}*/
-
+			}
 			tmp->free = 0;
 			tmp->ptr = NULL;
 			tmp->size = 0;
@@ -115,6 +104,8 @@ size_t	print_data_mem(t_block *zone)
 			total += zone->size;
 		}
 		zone = zone->next;
+		print_hexa((unsigned int)zone);
+		RC;
 	}
 	RC;
 	return (total);
@@ -331,8 +322,8 @@ void	fill_lst_large(size_t ptr)
 	tmp->next = tmp_2;
 	tmp->ptr = g_large_data + ptr;
 	tmp->flag = 'l';
-	/*if (tmp_2)*/
-		/*tmp_2->next = NULL;*/
+	if (tmp_2)
+		tmp_2->next = NULL;
 }
 
 size_t	check_if_alloc_fill(size_t size)
@@ -346,6 +337,7 @@ size_t	check_if_alloc_fill(size_t size)
 	i = 1;
 	tmp = meta_large;
 	size_alloc_in_page = 0;
+	/*ft_putstr("a\n");*/
 	while (tmp->next && tmp->free == 1)
 	{
 		if ((int)tmp->ptr % getpagesize() == 0)
@@ -353,6 +345,7 @@ size_t	check_if_alloc_fill(size_t size)
 		++i;
 		tmp = tmp->next;
 	}
+	/*ft_putstr("b\n");*/
 	tmp = meta_large;
 	i = 1;
 	while (i < begin_page)
@@ -417,9 +410,9 @@ void	*malloc(size_t size)
 	/*static size_t	nb_alloc_small = 0;*/
 	/*static size_t	nb_alloc_large = 0;*/
 
-	/*ft_putstr("Size = ");*/
-	/*ft_putnbr(size);*/
-	/*RC;*/
+	ft_putstr("Size = ");
+	ft_putnbr(size);
+	RC;
 	/*if (size <= TINY)*/
 		/*++nb_alloc_tiny;*/
 	/*else if (size <= SMALL)*/
@@ -436,6 +429,7 @@ void	*malloc(size_t size)
 	/*ft_putnbr(nb_alloc_large);*/
 	/*RC;*/
 
+	
 	allocation_familliale = NULL;
 	if (size <= SMALL)
 		allocation_familliale = alloc_tiny_small(size);
