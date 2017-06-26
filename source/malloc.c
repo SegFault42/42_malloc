@@ -7,6 +7,81 @@ void	*g_tiny_data = NULL;
 void	*g_small_data = NULL;
 void	*g_large_data = NULL;
 
+bool	look_for_addr(void *addr)
+{
+	t_block	*tmp;
+	int		i;
+
+	i = 0;
+	tmp = meta_tiny;
+	while (i < 2)
+	{
+		while (tmp)
+		{
+			if (tmp->ptr == addr)
+			{
+				tmp->free = 0;
+				tmp->size = 0;
+				tmp->flag = 0;
+				return (true);
+			}
+			tmp = tmp->next;
+		}
+		++i;
+		tmp = meta_small;
+	}
+	return (false);
+}
+
+void	free_large(void *addr)
+{
+	t_block	*tmp;
+	/*t_block	*tmp_2;*/
+
+	tmp = meta_large;
+	/*tmp_2 = meta_large;*/
+	while (tmp)
+	{
+		if (tmp->ptr == addr)
+		{
+			/*if ((size_t)tmp->ptr % getpagesize() == 0 && munmap(tmp->ptr, tmp->size) != 0)*/
+			/*{*/
+				/*ft_putstr_fd("munmap error : ", 2);*/
+				/*ft_putendl_fd(strerror(errno), 2);*/
+			/*}*/
+			if (munmap(tmp->ptr, tmp->size) == -1)
+			{
+				ft_putstr_fd("munmap error : ", 2);
+				ft_putendl_fd(strerror(errno), 2);
+			}
+			/*tmp_2->next = tmp->next;*/
+			/*else*/
+				/*meta_large = NULL;*/
+			/*if (munmap(tmp, sizeof(t_block)) == -1)*/
+			/*{*/
+				/*ft_putstr_fd("munmap error : ", 2);*/
+				/*ft_putendl_fd(strerror(errno), 2);*/
+			/*}*/
+
+			tmp->free = 0;
+			tmp->ptr = NULL;
+			tmp->size = 0;
+			tmp->flag = 0;
+			return ;
+		}
+		/*tmp_2 = tmp;*/
+		tmp = tmp->next;
+	}
+}
+
+void	free(void *addr)
+{
+	if (look_for_addr(addr) == true)
+		return ;
+	else
+		free_large(addr);
+}
+
 bool	check_if_meta_full(size_t size)
 {
 	t_block	*tmp;
@@ -74,11 +149,6 @@ void	show_alloc_mem()
 	ft_putstr(PURPLE"Total : ");
 	ft_putnbr(total);
 	ft_putendl(" octets"END);
-}
-
-void	free(void *addr)
-{
-	(void)addr;
 }
 
 bool	alloc_data(size_t size)
@@ -347,9 +417,9 @@ void	*malloc(size_t size)
 	/*static size_t	nb_alloc_small = 0;*/
 	/*static size_t	nb_alloc_large = 0;*/
 
-	ft_putstr("Size = ");
-	ft_putnbr(size);
-	RC;
+	/*ft_putstr("Size = ");*/
+	/*ft_putnbr(size);*/
+	/*RC;*/
 	/*if (size <= TINY)*/
 		/*++nb_alloc_tiny;*/
 	/*else if (size <= SMALL)*/
@@ -372,6 +442,6 @@ void	*malloc(size_t size)
 	else
 		allocation_familliale = alloc_large(size);
 
-	DEBUG_print_allocated_zones();
+	/*DEBUG_print_allocated_zones();*/
 	return (allocation_familliale);
 }

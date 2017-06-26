@@ -22,7 +22,8 @@
 
 # define MALLOC_FAILURE	(void *) -1
 # define TINY			64
-# define SMALL			256
+//# define TINY			128
+# define SMALL			1024
 # define LST_FULL		1
 # define LST_NOT_FULL	0
 # define NB_ZONES		128

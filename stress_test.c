@@ -7,8 +7,8 @@
 
 #define RAND_TINY random = rand() % 64 + 1;
 #define RAND_SMALL random = rand() % 192 + 65;
-/*#define RAND_LARGE random = rand() % RAND_MAX + 257;*/
-#define RAND_LARGE random = 1024;
+#define RAND_LARGE random = rand() % RAND_MAX + 257;
+/*#define RAND_LARGE random = 1024;*/
 #define RAND random = rand();
 
 void	usage()
