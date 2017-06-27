@@ -12,11 +12,19 @@
 
 int	main()
 {
-	malloc(4096);
-	malloc(4096);
-	malloc(4096);
-	malloc(4096);
-	show_alloc_mem();
+	/*char *str = (char *)malloc(20000);*/
+	/*memset(str, 'a', 20000);*/
+	/*printf("str (1) = %p - %s\n", str, str);*/
+	/*str = realloc(str, 10);*/
+	/*printf("str (2) = %p - %s\n", str, str);*/
+	/*show_alloc_mem();*/
+
+	char *str1 = (char *)malloc(20000);
+	memset(str1, 'a', 20000);
+	printf("str1 (1) = %p - %s\n", str1, str1);
+	str1 = realloc(str1, 30000);
+	printf("str1 (2) = %p - %s\n", str1, str1);
+
 	return (0);
 }
 

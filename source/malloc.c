@@ -7,12 +7,70 @@ void	*g_tiny_data = NULL;
 void	*g_small_data = NULL;
 void	*g_large_data = NULL;
 
-/*void	*realloc(void *ptr, size_t size)*/
-/*{*/
-	/*void	*tmp;*/
+t_block	*look_for_ptr(void *ptr)
+{
+	t_block	*tmp;
+	uint8_t	i;
 
-	/*tmp = ptr;*/
-/*}*/
+	i = 0;
+	tmp = meta_tiny;
+	while (i < 3)
+	{
+		if (i == 1)
+			tmp = meta_small;
+		else if (i == 2)
+			tmp = meta_large;
+		while (tmp)
+		{
+			if (tmp->ptr == ptr)
+				return (tmp);
+			tmp = tmp->next;
+		}
+		++i;
+	}
+	return (NULL);
+}
+
+void	*realloc(void *ptr, size_t size)
+{
+	void	*tmp;
+	void	*allocation_familliale;
+	t_block	*tmp_meta;
+
+	tmp = ptr;
+	allocation_familliale = NULL;
+		ft_putendl("Enter");
+	if (ptr == NULL)
+		return (malloc(size));
+	if (size == 0 && ptr)
+	{
+		free(ptr);
+		return (NULL);
+	}
+	tmp_meta = look_for_ptr(ptr);
+	if ((size <= TINY && tmp_meta->size <= TINY) ||
+		(size <= SMALL && tmp_meta->size <= SMALL) ||
+		(size <= tmp_meta->size + (tmp_meta->size % getpagesize()) && size > SMALL))
+		{
+		ft_putendl("i'm here");
+		return (ptr);
+		}
+	else
+	{
+		allocation_familliale = malloc(size);
+		ft_putendl("i'm here");
+		if (allocation_familliale)
+		{
+			if (size < tmp_meta->size)
+				ft_memcpy(allocation_familliale, ptr, size);
+			else
+				ft_memcpy(allocation_familliale, ptr, tmp_meta->size);
+			free(ptr);
+		}
+	}
+
+	return (allocation_familliale);
+}
 
 bool	look_for_addr(void *addr)
 {
@@ -433,16 +491,16 @@ void	*calloc(size_t nmemb, size_t size)
 void	*malloc(size_t size)
 {
 	void	*allocation_familliale;
-	static size_t	nb_alloc_tiny = 0;
+	/*static size_t	nb_alloc_tiny = 0;*/
 	/*static size_t	nb_alloc_small = 0;*/
 	/*static size_t	nb_alloc_large = 0;*/
 
-	++nb_alloc_tiny;
-	ft_putstr("Size = ");
-	ft_putnbr(size);
-	ft_putstr(", ");
-	ft_putnbr(nb_alloc_tiny);
-	RC;
+	/*++nb_alloc_tiny;*/
+	/*ft_putstr("Size = ");*/
+	/*ft_putnbr(size);*/
+	/*ft_putstr(", ");*/
+	/*ft_putnbr(nb_alloc_tiny);*/
+	/*RC;*/
 	/*if (size <= TINY)*/
 		/*++nb_alloc_tiny;*/
 	/*else if (size <= SMALL)*/

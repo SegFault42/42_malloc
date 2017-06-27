@@ -44,6 +44,7 @@ SRC = ./ft_putendl_fd.c\
 	  ./ft_strsplit.c\
 	  ./ft_strsub.c\
 	  ./ft_strnew.c\
+	  ./ft_memcpy.c\
 
 OBJS = $(SRC:.c=.o)
 
