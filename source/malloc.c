@@ -354,12 +354,13 @@ size_t	check_if_alloc_fill(size_t size)
 	}
 	/*ft_putstr("b\n");*/
 	tmp = meta_large;
-	i = 1;
-	while (i < begin_page)
-	{
-		tmp = tmp->next;
-		++i;
-	}
+	/*i = 1;*/
+	/*while (i < begin_page)*/
+	/*{*/
+		/*tmp = tmp->next;*/
+		/*++i;*/
+	/*}*/
+	tmp += begin_page;
 	while (tmp && tmp->free == 1)
 	{
 		size_alloc_in_page += tmp->size;

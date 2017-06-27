@@ -16,9 +16,9 @@ int	main()
 	strcpy(addr1, "Bonjours\n");
 	ft_putstr(addr1);
 
-	char *addr3 = (char*)malloc(10000);
+	char *addr3 = (char*)malloc(128 *M);
 	addr3[127*M] = 42;
-	/*ft_putstr(addr3);*/
+	ft_putstr(addr3);
 	/*malloc(54 * 32);*/
 	/*malloc(54 * 54);*/
 	/*malloc(54 * 54 * 16);*/
