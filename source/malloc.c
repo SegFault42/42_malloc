@@ -325,6 +325,13 @@ void	fill_lst_large(size_t ptr)
 		tmp = tmp->next;
 		++i;
 	}
+	if (tmp == NULL)
+	{
+		tmp = meta_large;
+		while (tmp->next)
+			tmp = tmp->next;
+		tmp->next = alloc_meta();
+	}
 	tmp_2 += i;
 	tmp->next = tmp_2;
 	tmp->ptr = g_large_data + ptr;
@@ -411,16 +418,31 @@ void	*alloc_large(size_t size)
 	return (tmp->ptr);
 }
 
+void	*calloc(size_t nmemb, size_t size)
+{
+	void	*allocation_familliale;
+
+	allocation_familliale = NULL;
+	if (size > MAX_SIZE || size == 0 || nmemb == 0)
+		return (allocation_familliale);
+	allocation_familliale = malloc(nmemb * size);
+	ft_memset(allocation_familliale, 0, nmemb * size);
+	return (allocation_familliale);
+}
+
 void	*malloc(size_t size)
 {
 	void	*allocation_familliale;
-	/*static size_t	nb_alloc_tiny = 0;*/
+	static size_t	nb_alloc_tiny = 0;
 	/*static size_t	nb_alloc_small = 0;*/
 	/*static size_t	nb_alloc_large = 0;*/
 
-	/*ft_putstr("Size = ");*/
-	/*ft_putnbr(size);*/
-	/*RC;*/
+	++nb_alloc_tiny;
+	ft_putstr("Size = ");
+	ft_putnbr(size);
+	ft_putstr(", ");
+	ft_putnbr(nb_alloc_tiny);
+	RC;
 	/*if (size <= TINY)*/
 		/*++nb_alloc_tiny;*/
 	/*else if (size <= SMALL)*/
@@ -437,8 +459,9 @@ void	*malloc(size_t size)
 	/*ft_putnbr(nb_alloc_large);*/
 	/*RC;*/
 
-	
 	allocation_familliale = NULL;
+	if (size > MAX_SIZE || size == 0)
+		return (allocation_familliale);
 	if (size <= SMALL)
 		allocation_familliale = alloc_tiny_small(size);
 	else

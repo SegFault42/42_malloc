@@ -21,12 +21,13 @@
 # include "../libft/includes/libft.h"
 
 # define MALLOC_FAILURE	(void *) -1
-# define TINY			64
-//# define TINY			128
-# define SMALL			1024
-# define LST_FULL		1
-# define LST_NOT_FULL	0
-# define NB_ZONES		128
+# define TINY			(64)
+//# define TINY			(128)
+# define SMALL			(1024)
+# define LST_FULL		(1)
+# define LST_NOT_FULL	(0)
+# define NB_ZONES		(128)
+# define MAX_SIZE		(SIZE_T_MAX - (2 * getpagesize()))
 
 # define PROT			PROT_READ | PROT_WRITE
 # define FLAG			MAP_ANON | MAP_PRIVATE
