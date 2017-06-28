@@ -39,34 +39,43 @@ void	*realloc(void *ptr, size_t size)
 
 	tmp = ptr;
 	allocation_familliale = NULL;
-		ft_putendl("Enter");
+	/*ft_putendl("Realloc");*/
 	if (ptr == NULL)
-		return (malloc(size));
+	{
+		/*ft_putendl("ptr = NULL");*/
+		allocation_familliale = malloc(size);
+		return (allocation_familliale);
+	}
 	if (size == 0 && ptr)
 	{
+		/*ft_putendl("size = 0");*/
 		free(ptr);
 		return (NULL);
 	}
 	tmp_meta = look_for_ptr(ptr);
+	if (tmp_meta == NULL)
+		return (NULL);
 	if ((size <= TINY && tmp_meta->size <= TINY) ||
 		(size <= SMALL && tmp_meta->size <= SMALL) ||
 		(size <= tmp_meta->size + (tmp_meta->size % getpagesize()) && size > SMALL))
 		{
-		ft_putendl("i'm here");
+		/*ft_putendl("if");*/
 		return (ptr);
 		}
 	else
 	{
 		allocation_familliale = malloc(size);
-		ft_putendl("i'm here");
+		/*ft_putstr("else");*/
 		if (allocation_familliale)
 		{
+			/*ft_putstr(" ok");*/
 			if (size < tmp_meta->size)
 				ft_memcpy(allocation_familliale, ptr, size);
 			else
 				ft_memcpy(allocation_familliale, ptr, tmp_meta->size);
-			free(ptr);
 		}
+		free(ptr);
+		/*RC;*/
 	}
 
 	return (allocation_familliale);
@@ -130,6 +139,7 @@ void	free_large(void *addr)
 
 void	free(void *addr)
 {
+	/*ft_putendl("Free");*/
 	if (look_for_addr(addr) == true)
 		return ;
 	else
@@ -471,14 +481,23 @@ void	*alloc_large(size_t size)
 		/*print_hexa((unsigned int )tmp);*/
 		/*RC;*/
 	}
+	if (!tmp)
+	{
+		if (alloc_data(size) == false)
+			return (NULL);
+		fill_lst_large(0);
+		tmp = meta_large;
+	}
 	tmp->free = 1;
 	tmp->size = size;
+	/*print_hexa((unsigned int)tmp->ptr);*/
 	return (tmp->ptr);
 }
 
 void	*calloc(size_t nmemb, size_t size)
 {
 	void	*allocation_familliale;
+	/*ft_putendl("Calloc");*/
 
 	allocation_familliale = NULL;
 	if (size > MAX_SIZE || size == 0 || nmemb == 0)
@@ -498,6 +517,7 @@ void	*malloc(size_t size)
 	/*++nb_alloc_tiny;*/
 	/*ft_putstr("Size = ");*/
 	/*ft_putnbr(size);*/
+	/*RC;*/
 	/*ft_putstr(", ");*/
 	/*ft_putnbr(nb_alloc_tiny);*/
 	/*RC;*/
@@ -516,6 +536,7 @@ void	*malloc(size_t size)
 	/*ft_putstr("nb_alloc_large = ");*/
 	/*ft_putnbr(nb_alloc_large);*/
 	/*RC;*/
+	/*ft_putendl("Malloc");*/
 
 	allocation_familliale = NULL;
 	if (size > MAX_SIZE || size == 0)
