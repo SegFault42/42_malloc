@@ -1,11 +1,6 @@
 #include "../include/malloc.h"
 
-t_block	*meta_tiny = NULL;
-t_block	*meta_small = NULL;
-t_block	*meta_large = NULL;
-void	*g_tiny_data = NULL;
-void	*g_small_data = NULL;
-void	*g_large_data = NULL;
+t_memory	g_memory = {NULL, NULL, NULL, NULL, NULL, NULL};
 
 t_block	*look_for_ptr(void *ptr)
 {
@@ -13,13 +8,13 @@ t_block	*look_for_ptr(void *ptr)
 	uint8_t	i;
 
 	i = 0;
-	tmp = meta_tiny;
+	tmp = g_memory.meta_tiny;
 	while (i < 3)
 	{
 		if (i == 1)
-			tmp = meta_small;
+			tmp = g_memory.meta_small;
 		else if (i == 2)
-			tmp = meta_large;
+			tmp = g_memory.meta_large;
 		while (tmp)
 		{
 			if (tmp->ptr == ptr)
@@ -87,7 +82,7 @@ bool	look_for_addr(void *addr)
 	int		i;
 
 	i = 0;
-	tmp = meta_tiny;
+	tmp = g_memory.meta_tiny;
 	while (i < 2)
 	{
 		while (tmp)
@@ -102,7 +97,7 @@ bool	look_for_addr(void *addr)
 			tmp = tmp->next;
 		}
 		++i;
-		tmp = meta_small;
+		tmp = g_memory.meta_small;
 	}
 	return (false);
 }
@@ -111,7 +106,7 @@ void	free_large(void *addr)
 {
 	t_block	*tmp;
 
-	tmp = meta_large;
+	tmp = g_memory.meta_large;
 	while (tmp)
 	{
 		if (tmp->ptr == addr)
@@ -140,6 +135,8 @@ void	free_large(void *addr)
 void	free(void *addr)
 {
 	/*ft_putendl("Free");*/
+	if (addr == NULL)
+		return ;
 	if (look_for_addr(addr) == true)
 		return ;
 	else
@@ -151,9 +148,9 @@ bool	check_if_meta_full(size_t size)
 	t_block	*tmp;
 
 	if (size <= TINY)
-		tmp = meta_tiny;
+		tmp = g_memory.meta_tiny;
 	else
-		tmp = meta_small;
+		tmp = g_memory.meta_small;
 	while (tmp->next && tmp->free == 1)
 		tmp = tmp->next;
 	if (tmp->next == NULL)
@@ -191,26 +188,26 @@ void	show_alloc_mem()
 	size_t	total;
 
 	total = 0;
-	if (meta_tiny && meta_tiny->free == 1)
+	if (g_memory.meta_tiny && g_memory.meta_tiny->free == 1)
 	{
 		ft_putstr(YELLOW"\e[1mTINY : ");
-		print_hexa((unsigned int)meta_tiny);
+		print_hexa((unsigned int)g_memory.meta_tiny);
 		RC;
-		total += print_data_mem(meta_tiny);
+		total += print_data_mem(g_memory.meta_tiny);
 	}
-	if (meta_small && meta_small->free == 1)
+	if (g_memory.meta_small && g_memory.meta_small->free == 1)
 	{
 		ft_putstr(ORANGE"SMALL : ");
-		print_hexa((unsigned int)meta_small);
+		print_hexa((unsigned int)g_memory.meta_small);
 		RC;
-		total += print_data_mem(meta_small);
+		total += print_data_mem(g_memory.meta_small);
 	}
-	if (meta_large && meta_large->free == 1)
+	if (g_memory.meta_large && g_memory.meta_large->free == 1)
 	{
 		ft_putstr(RED"LARGE : ");
-		print_hexa((unsigned int)meta_large);
+		print_hexa((unsigned int)g_memory.meta_large);
 		RC;
-		total += print_data_mem(meta_large);
+		total += print_data_mem(g_memory.meta_large);
 	}
 	ft_putstr(PURPLE"Total : ");
 	ft_putnbr(total);
@@ -221,33 +218,33 @@ bool	alloc_data(size_t size)
 {
 	if (size <= TINY)
 	{
-		g_tiny_data = mmap(NULL, TINY * 128, PROT, FLAG, -1, 0);
-		if (g_tiny_data == NULL)
+		g_memory.tiny_data = mmap(NULL, TINY * 128, PROT, FLAG, -1, 0);
+		if (g_memory.tiny_data == NULL)
 		{
 			ft_putstr_fd(strerror(errno), 2);
 			return (false);
 		}
-		/*ft_memset(g_tiny_data, 0, TINY * 128);*/
+		/*ft_memset(g_memory.tiny_data, 0, TINY * 128);*/
 	}
 	else if (size <= SMALL)
 	{
-		g_small_data = mmap(NULL, SMALL * 128, PROT, FLAG, -1, 0);
-		if (g_small_data == NULL)
+		g_memory.small_data = mmap(NULL, SMALL * 128, PROT, FLAG, -1, 0);
+		if (g_memory.small_data == NULL)
 		{
 			ft_putstr_fd(strerror(errno), 2);
 			return (false);
 		}
-		/*ft_memset(g_small_data, 0, SMALL * 128);*/
+		/*ft_memset(g_memory.small_data, 0, SMALL * 128);*/
 	}
 	else
 	{
-		g_large_data = mmap(NULL, size, PROT, FLAG, -1, 0);
-		if (g_large_data == NULL)
+		g_memory.large_data = mmap(NULL, size, PROT, FLAG, -1, 0);
+		if (g_memory.large_data == NULL)
 		{
 			ft_putstr_fd(strerror(errno), 2);
 			return (false);
 		}
-		/*ft_memset(g_large_data, 0, size);*/
+		/*ft_memset(g_memory->large_data, 0, size);*/
 	}
 	return (true);
 }
@@ -273,12 +270,12 @@ void	init_node(t_block *node, char flag, int i)
 	tmp = NULL;
 	if (flag == 't')
 	{
-		tmp = g_tiny_data;
+		tmp = g_memory.tiny_data;
 		tmp += i * TINY;
 	}
 	else if (flag == 's')
 	{
-		tmp = g_small_data;
+		tmp = g_memory.small_data;
 		tmp += i * SMALL;
 	}
 	node->ptr = tmp;
@@ -296,14 +293,14 @@ void	fill_lst(char flag)
 	tmp_2 = NULL;
 	if (flag == 't')
 	{
-		tmp = meta_tiny;
+		tmp = g_memory.meta_tiny;
 		while (tmp->next)
 			tmp = tmp->next;
 		tmp_2 = tmp;
 	}
 	else if (flag == 's')
 	{
-		tmp = meta_small;
+		tmp = g_memory.meta_small;
 		while (tmp->next)
 			tmp = tmp->next;
 		tmp_2 = tmp;
@@ -328,9 +325,9 @@ void	*alloc_tiny_small(size_t size)
 	tmp = NULL;
 	if (size <= TINY)
 	{
-		if (meta_tiny == NULL)
+		if (g_memory.meta_tiny == NULL)
 		{
-			if ((meta_tiny = alloc_meta()) == NULL)
+			if ((g_memory.meta_tiny = alloc_meta()) == NULL)
 				return (NULL);
 			if (alloc_data(size) == false)
 				return (NULL);
@@ -338,7 +335,7 @@ void	*alloc_tiny_small(size_t size)
 		}
 		else if (check_if_meta_full(size) == LST_FULL)
 		{
-			tmp = meta_tiny;
+			tmp = g_memory.meta_tiny;
 			while (tmp->next)
 				tmp = tmp->next;
 			if ((tmp->next = alloc_meta()) == NULL)
@@ -347,13 +344,13 @@ void	*alloc_tiny_small(size_t size)
 				return (NULL);
 			fill_lst('t');
 		}
-		tmp = meta_tiny;
+		tmp = g_memory.meta_tiny;
 	}
 	else if (size <= SMALL)
 	{
-		if (meta_small == NULL)
+		if (g_memory.meta_small == NULL)
 		{
-			if ((meta_small = alloc_meta()) == NULL)
+			if ((g_memory.meta_small = alloc_meta()) == NULL)
 				return (NULL);
 			if (alloc_data(size) == false)
 				return (NULL);
@@ -361,7 +358,7 @@ void	*alloc_tiny_small(size_t size)
 		}
 		else if (check_if_meta_full(size) == LST_FULL)
 		{
-			tmp = meta_small;
+			tmp = g_memory.meta_small;
 			while (tmp->next)
 				tmp = tmp->next;
 			if ((tmp->next = alloc_meta()) == NULL)
@@ -370,7 +367,7 @@ void	*alloc_tiny_small(size_t size)
 				return (NULL);
 			fill_lst('s');
 		}
-		tmp = meta_small;
+		tmp = g_memory.meta_small;
 	}
 	while (tmp->next && tmp->free == 1)
 		tmp = tmp->next;
@@ -386,8 +383,8 @@ void	fill_lst_large(size_t ptr)
 	size_t	i;
 
 	i = 1;
-	tmp = meta_large;
-	tmp_2 = meta_large;
+	tmp = g_memory.meta_large;
+	tmp_2 = g_memory.meta_large;
 	while (tmp && tmp->free == 1)
 	{
 		tmp = tmp->next;
@@ -395,14 +392,14 @@ void	fill_lst_large(size_t ptr)
 	}
 	if (tmp == NULL)
 	{
-		tmp = meta_large;
+		tmp = g_memory.meta_large;
 		while (tmp->next)
 			tmp = tmp->next;
 		tmp->next = alloc_meta();
 	}
 	tmp_2 += i;
 	tmp->next = tmp_2;
-	tmp->ptr = g_large_data + ptr;
+	tmp->ptr = g_memory.large_data + ptr;
 	tmp->flag = 'l';
 	if (tmp_2)
 		tmp_2->next = NULL;
@@ -417,7 +414,7 @@ size_t	check_if_alloc_fill(size_t size)
 
 	begin_page = 1;
 	i = 1;
-	tmp = meta_large;
+	tmp = g_memory.meta_large;
 	size_alloc_in_page = 0;
 	/*ft_putstr("a\n");*/
 	while (tmp && tmp->free == 1)
@@ -428,7 +425,7 @@ size_t	check_if_alloc_fill(size_t size)
 		tmp = tmp->next;
 	}
 	/*ft_putstr("b\n");*/
-	tmp = meta_large;
+	tmp = g_memory.meta_large;
 	/*i = 1;*/
 	/*while (i < begin_page)*/
 	/*{*/
@@ -453,16 +450,16 @@ void	*alloc_large(size_t size)
 	t_block	*tmp;
 	size_t	addr_ok;
 
-	tmp = meta_large;
+	tmp = g_memory.meta_large;
 	addr_ok = 0;
-	if (meta_large == NULL)
+	if (g_memory.meta_large == NULL)
 	{
-		if ((meta_large = alloc_meta()) == NULL)
+		if ((g_memory.meta_large = alloc_meta()) == NULL)
 			return (NULL);
 		if (alloc_data(size) == false)
 			return (NULL);
 		fill_lst_large(0);
-		tmp = meta_large;
+		tmp = g_memory.meta_large;
 	}
 	else
 	{
@@ -486,7 +483,7 @@ void	*alloc_large(size_t size)
 		if (alloc_data(size) == false)
 			return (NULL);
 		fill_lst_large(0);
-		tmp = meta_large;
+		tmp = g_memory.meta_large;
 	}
 	tmp->free = 1;
 	tmp->size = size;
@@ -510,6 +507,8 @@ void	*calloc(size_t nmemb, size_t size)
 void	*malloc(size_t size)
 {
 	void	*allocation_familliale;
+
+	/*ft_memset(&g_memory, 0, sizeof(g_memory));*/
 	/*static size_t	nb_alloc_tiny = 0;*/
 	/*static size_t	nb_alloc_small = 0;*/
 	/*static size_t	nb_alloc_large = 0;*/

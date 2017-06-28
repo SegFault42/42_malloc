@@ -29,15 +29,6 @@ int	main()
 	/*str1 = realloc(str1, 30000);*/
 	/*printf("str1 (2) = %p - %s\n", str1, str1);*/
 
-char *addr1;
-char *addr3;
-
-addr1 = (char*)malloc(16*M);
-strcpy(addr1, "Bonjours\n");
-print(addr1);
-addr3 = (char*)realloc(addr1, 128*M);
-addr3[127*M] = 42;
-print(addr3);
 	return (0);
 }
 

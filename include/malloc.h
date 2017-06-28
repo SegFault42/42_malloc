@@ -42,6 +42,16 @@ typedef struct		s_block
 	char			pad[6];		// variable for padding
 }					t_block;
 
+typedef	struct		s_memory
+{
+	t_block	*meta_tiny;
+	t_block	*meta_small;
+	t_block	*meta_large;
+	void	*tiny_data;
+	void	*small_data;
+	void	*large_data;
+}					t_memory;
+
 void	DEBUG_print_allocated_zones();
 void	show_alloc_mem();
 
