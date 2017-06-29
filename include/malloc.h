@@ -52,7 +52,37 @@ typedef	struct		s_memory
 	void	*large_data;
 }					t_memory;
 
-void	DEBUG_print_allocated_zones();
 void	show_alloc_mem();
+/*
+**	realloc.c
+*/
+void	*realloc(void *ptr, size_t size);
+/*
+**	free.c
+*/
+void	free(void *addr);
+/*
+**	debug.c
+*/
+void	show_alloc_mem();
+void	DEBUG_print_allocated_zones();
+/*
+**	tiny_small.c
+*/
+void	*alloc_tiny_small(size_t size);
+/*
+**	tiny_small.c
+*/
+void	*alloc_large(size_t size);
+/*
+**	lst.c
+*/
+bool	check_if_meta_full(size_t size);
+void	fill_lst(char flag);
+/*
+**	memory.c
+*/
+t_block	*alloc_meta();
+bool	alloc_data(size_t size);
 
 #endif
