@@ -1,0 +1,8 @@
+Bonus :
+
+Thread safe
+
+calloc ok
+variable environement debug ok
+dump hexa des zones alloue ok
+historique des allocations memoire ok

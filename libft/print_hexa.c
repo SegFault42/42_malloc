@@ -24,7 +24,7 @@ static unsigned long	switch_hexa(unsigned long x)
 	return (0);
 }
 
-void	print_hexa(unsigned long n)
+void	print_hexa_fd(unsigned long n, int fd)
 {
 	char			str[128];
 	int				size;
@@ -47,5 +47,5 @@ void	print_hexa(unsigned long n)
 		n /= 16;
 		size--;
 	}
-	ft_putstr_fd(str, 1);
+	ft_putstr_fd(str, fd);
 }

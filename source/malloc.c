@@ -5,7 +5,6 @@ t_memory	g_memory = {NULL, NULL, NULL, NULL, NULL, NULL};
 void	*calloc(size_t nmemb, size_t size)
 {
 	void	*allocation_familliale;
-	/*ft_putendl("Calloc");*/
 
 	allocation_familliale = NULL;
 	if (size > MAX_SIZE || size == 0 || nmemb == 0)
@@ -26,8 +25,8 @@ void	*malloc(size_t size)
 		allocation_familliale = alloc_tiny_small(size);
 	else
 		allocation_familliale = alloc_large(size);
-
 	/*DEBUG_print_allocated_zones();*/
 	/*ft_putstr("Exit");*/
+	debug_env(size, allocation_familliale);
 	return (allocation_familliale);
 }

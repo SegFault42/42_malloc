@@ -118,6 +118,7 @@ void				*ft_trymalloc(size_t size);
 void				ft_critical_error(uint8_t error);
 void				ft_set_2d_tab(char **tab, int size);
 void				ft_strxcat(char *dest, char *src, int x);
-void				print_hexa(unsigned long n);
+void				print_hexa_fd(unsigned long n, int fd);
+void				ft_create_log_file(char *name, char *str);
 
 #endif

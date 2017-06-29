@@ -26,6 +26,7 @@ SRC = ./ft_putendl_fd.c\
 	  ./ft_hexa_ltoa.c\
 	  ./ft_ltoa_base.c\
 	  ./ft_putstr_fd.c\
+	  ./ft_putnbr_fd.c\
 	  ./ft_memalloc.c\
 	  ./ft_memset.c\
 	  ./ft_strcat.c\
@@ -45,6 +46,7 @@ SRC = ./ft_putendl_fd.c\
 	  ./ft_strsub.c\
 	  ./ft_strnew.c\
 	  ./ft_memcpy.c\
+	  ./ft_create_log_file.c\
 
 OBJS = $(SRC:.c=.o)
 
@@ -64,7 +66,7 @@ $(NAME): $(OBJS) ./includes/libft.h
 
 %.o : %.c $(HEAD)
 	@printf " ✅                                                              \r"
-	@printf "✅  $(notdir $<)\r"
+	@printf "✅  $(notdir $<)                                                 \r"
 	$(CC) -c $(FLAG) $< -o $@
 
 mc: fclean all clean

@@ -37,13 +37,13 @@ static void	free_large(void *addr)
 	{
 		if (tmp->ptr == addr)
 		{
-			if (munmap(tmp->ptr, tmp->size) == -1)
+			if (munmap(tmp->ptr, tmp->size) != -1)
 			{
+				tmp->free = 0;
+				tmp->ptr = NULL;
+				tmp->size = 0;
+				tmp->flag = 0;
 			}
-			tmp->free = 0;
-			tmp->ptr = NULL;
-			tmp->size = 0;
-			tmp->flag = 0;
 			return ;
 		}
 		tmp = tmp->next;

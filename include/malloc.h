@@ -66,6 +66,7 @@ void	free(void *addr);
 */
 void	show_alloc_mem();
 void	DEBUG_print_allocated_zones();
+void	debug_env();
 /*
 **	tiny_small.c
 */
