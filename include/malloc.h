@@ -18,11 +18,11 @@
 # include <stdbool.h>
 # include <sys/mman.h>
 # include <string.h>
+# include <pthread.h>
 # include "../libft/includes/libft.h"
 
 # define MALLOC_FAILURE	(void *) -1
-//# define TINY			(64)
-# define TINY			(256)
+# define TINY			(1024)
 # define SMALL			(4096)
 # define LST_FULL		(1)
 # define LST_NOT_FULL	(0)
@@ -44,46 +44,55 @@ typedef struct		s_block
 
 typedef	struct		s_memory
 {
-	t_block	*meta_tiny;
-	t_block	*meta_small;
-	t_block	*meta_large;
-	void	*tiny_data;
-	void	*small_data;
-	void	*large_data;
+	t_block			*meta_tiny;
+	t_block			*meta_small;
+	t_block			*meta_large;
+	void			*tiny_data;
+	void			*small_data;
+	void			*large_data;
 }					t_memory;
 
-void	show_alloc_mem();
+typedef struct		s_mutex
+{
+	pthread_mutex_t	m_malloc;
+	pthread_mutex_t	m_calloc;
+	pthread_mutex_t	m_realloc;
+	pthread_mutex_t	m_free;
+	pthread_mutex_t	m_show_alloc_mem;
+}					t_mutex;
+
+void				show_alloc_mem();
 /*
 **	realloc.c
 */
-void	*realloc(void *ptr, size_t size);
+void				*realloc(void *ptr, size_t size);
 /*
 **	free.c
 */
-void	free(void *addr);
+void				free(void *addr);
 /*
 **	debug.c
 */
-void	show_alloc_mem();
-void	DEBUG_print_allocated_zones();
-void	debug_env();
+void				show_alloc_mem();
+void				DEBUG_print_allocated_zones();
+void				debug_env();
 /*
 **	tiny_small.c
 */
-void	*alloc_tiny_small(size_t size);
+void				*alloc_tiny_small(size_t size);
 /*
 **	tiny_small.c
 */
-void	*alloc_large(size_t size);
+void				*alloc_large(size_t size);
 /*
 **	lst.c
 */
-bool	check_if_meta_full(size_t size);
-void	fill_lst(char flag);
+bool				check_if_meta_full(size_t size);
+void				fill_lst(char flag);
 /*
 **	memory.c
 */
-t_block	*alloc_meta();
-bool	alloc_data(size_t size);
+t_block				*alloc_meta();
+bool				alloc_data(size_t size);
 
 #endif

@@ -35,5 +35,3 @@ t_block	*alloc_meta()
 	ft_memset(tmp, 0, getpagesize());
 	return (tmp);
 }
-
-

@@ -1,6 +1,7 @@
 #include "../include/malloc.h"
 
 extern t_memory	g_memory;
+extern t_mutex	g_mutex;
 
 void	save_alloc_history(size_t size, void *allocation)
 {
@@ -30,7 +31,7 @@ void	show_consum(size_t size)
 	static size_t	size_total = 0;
 
 	size_total += size;
-	ft_putendl("==============================");
+	ft_putendl("=====================================");
 	ft_putstr(PINK"Memory allocated in  B : ");
 	ft_putnbr(size_total);
 	RC;
@@ -47,9 +48,9 @@ void	show_consum(size_t size)
 
 void	debug_env(size_t size, void *allocation)
 {
-	if (getenv("MALLOC_HISTORY") != NULL)
+	if (getenv("MALLOC_HISTORY") && !ft_strcmp(getenv("MALLOC_HISTORY"), "1"))
 		save_alloc_history(size, allocation);
-	if (getenv("MALLOC_SHOW_CONSUM") != NULL)
+	if (getenv("MALLOC_SHOW_CONSUM") && !ft_strcmp(getenv("MALLOC_SHOW_CONSUM"), "1"))
 		show_consum(size);
 }
 
@@ -81,6 +82,11 @@ void	show_alloc_mem()
 	size_t	total;
 
 	total = 0;
+	if (pthread_mutex_lock(&g_mutex.m_show_alloc_mem) == EINVAL)
+	{
+		pthread_mutex_init(&g_mutex.m_show_alloc_mem, NULL);
+		pthread_mutex_lock(&g_mutex.m_show_alloc_mem);
+	}
 	if (g_memory.meta_tiny && g_memory.meta_tiny->free == 1)
 	{
 		ft_putstr(YELLOW"\e[1mTINY : ");
@@ -105,4 +111,5 @@ void	show_alloc_mem()
 	ft_putstr(PURPLE"Total : ");
 	ft_putnbr(total);
 	ft_putendl(" octets"END);
+	pthread_mutex_unlock(&g_mutex.m_show_alloc_mem);
 }

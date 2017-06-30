@@ -6,6 +6,7 @@
 && size > SMALL)
 
 extern t_memory	g_memory;
+extern t_mutex	g_mutex;
 
 static t_block	*look_for_ptr(void *ptr)
 {
@@ -78,6 +79,12 @@ void	*realloc(void *ptr, size_t size)
 {
 	void	*allocation_familliale;
 
+	if (pthread_mutex_lock(&g_mutex.m_realloc) == EINVAL)
+	{
+		pthread_mutex_init(&g_mutex.m_realloc, NULL);
+		pthread_mutex_lock(&g_mutex.m_realloc);
+	}
 	allocation_familliale = reallocation(ptr, size);
+	pthread_mutex_unlock(&g_mutex.m_realloc);
 	return (allocation_familliale);
 }

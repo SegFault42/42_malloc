@@ -16,7 +16,7 @@
 
 int	main()
 {
-	/*char *str = (char *)malloc(20000);*/
+	char *str = (char *)malloc(0);
 	/*memset(str, 'a', 20000);*/
 	/*printf("str (1) = %p - %s\n", str, str);*/
 	/*str = realloc(str, 10);*/

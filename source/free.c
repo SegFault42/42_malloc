@@ -1,6 +1,7 @@
 #include "../include/malloc.h"
 
 extern t_memory	g_memory;
+extern t_mutex	g_mutex;
 
 static bool	look_for_addr(void *addr)
 {
@@ -52,11 +53,18 @@ static void	free_large(void *addr)
 
 void	free(void *addr)
 {
-	if (addr == NULL)
+	if (pthread_mutex_lock(&g_mutex.m_free) == EINVAL)
+	{
+		pthread_mutex_init(&g_mutex.m_free, NULL);
+		pthread_mutex_lock(&g_mutex.m_free);
+	}
+	if (addr == NULL || look_for_addr(addr) == true)
+	{
+		pthread_mutex_unlock(&g_mutex.m_free);
 		return ;
-	if (look_for_addr(addr) == true)
-		return ;
+	}
 	else
 		free_large(addr);
+	pthread_mutex_unlock(&g_mutex.m_free);
 }
 
