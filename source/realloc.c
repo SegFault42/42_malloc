@@ -50,10 +50,8 @@ t_block	*error(void *ptr, size_t size)
 void	*reallocation(void *ptr, size_t size)
 {
 	t_block	*tmp_meta;
-	void	*tmp;
 	void	*allocation_familliale;
 
-	tmp = ptr;
 	if (ptr == NULL)
 		return (malloc(size));
 	else if ((tmp_meta = error(ptr, size)) == NULL)

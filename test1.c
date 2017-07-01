@@ -1,4 +1,5 @@
-#include "./include/malloc.h"
+/*#include "./include/malloc.h"*/
+#include <stdlib.h>
 
 int	main()
 {
@@ -12,6 +13,5 @@ int	main()
 		addr[0] = 42;
 		i++;
 	}
-	show_alloc_mem();
 	return 0;
 }

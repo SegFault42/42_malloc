@@ -1,4 +1,5 @@
-#include "./include/malloc.h"
+/*#include "./include/malloc.h"*/
+#include <stdlib.h>
 
 int	main()
 {
@@ -10,6 +11,5 @@ int	main()
 	{
 		i++;
 	}
-	show_alloc_mem();
 	return 0;
 }

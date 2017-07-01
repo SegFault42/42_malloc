@@ -21,7 +21,7 @@ RED = \033[38;5;9m
 END = \033[0m
 ##################################_COMPILATION_#################################
 NAME = libft_malloc_$(HOSTTYPE).so
-CC = gcc
+CC = clang
 #FLAG = -Weverything -g
 FLAG = -Wall -Wextra -Werror -g
 LFT = ./libft/libft.a

@@ -52,7 +52,7 @@ void	fill_lst(char flag)
 			tmp = tmp->next;
 		tmp_2 = tmp;
 	}
-	else if (flag == 's')
+	else
 	{
 		tmp = g_memory.meta_small;
 		while (tmp->next)

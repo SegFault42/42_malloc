@@ -1,7 +1,7 @@
 #include "../include/malloc.h"
 
 t_memory	g_memory = {NULL, NULL, NULL, NULL, NULL, NULL};
-t_mutex		g_mutex = {};
+t_mutex		g_mutex;
 
 void	*calloc(size_t nmemb, size_t size)
 {

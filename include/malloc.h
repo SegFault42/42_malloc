@@ -22,8 +22,8 @@
 # include "../libft/includes/libft.h"
 
 # define MALLOC_FAILURE	(void *) -1
-# define TINY			(1024)
-# define SMALL			(4096)
+# define TINY			(512)
+# define SMALL			(1024)
 # define LST_FULL		(1)
 # define LST_NOT_FULL	(0)
 # define NB_ZONES		(128)
