@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   free.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/07/22 19:19:05 by rabougue          #+#    #+#             */
+/*   Updated: 2017/07/22 20:28:33 by rabougue         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/malloc.h"
 
 extern t_memory	g_memory;
@@ -51,7 +63,7 @@ static void	free_large(void *addr)
 	}
 }
 
-void	free(void *addr)
+void		free(void *addr)
 {
 	if (pthread_mutex_lock(&g_mutex.m_free) == EINVAL)
 	{
@@ -67,4 +79,3 @@ void	free(void *addr)
 		free_large(addr);
 	pthread_mutex_unlock(&g_mutex.m_free);
 }
-

@@ -6,7 +6,7 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/14 05:54:47 by rabougue          #+#    #+#             */
-/*   Updated: 2017/05/20 02:14:40 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/07/22 19:27:30 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,12 @@
 
 typedef struct		s_block
 {
-	struct s_block	*next;		// next pointer
-	size_t			size;		// size of allocation
-	void			*ptr;		// pointer on data
-	bool			free;		// free or not
-	char			flag;		// flag size (tiny, small or large)
-	char			pad[6];		// variable for padding
+	struct s_block	*next;
+	size_t			size;
+	void			*ptr;
+	bool			free;
+	char			flag;
+	char			pad[6];
 }					t_block;
 
 typedef	struct		s_memory
@@ -74,7 +74,6 @@ void				free(void *addr);
 **	debug.c
 */
 void				show_alloc_mem();
-void				DEBUG_print_allocated_zones();
 void				debug_env();
 /*
 **	tiny_small.c

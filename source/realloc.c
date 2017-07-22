@@ -1,9 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   realloc.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/07/22 19:18:38 by rabougue          #+#    #+#             */
+/*   Updated: 2017/07/22 20:29:03 by rabougue         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/malloc.h"
 
 #define IF_TINY (size <= TINY && tmp_meta->size <= TINY)
 #define IF_SMALL (size <= SMALL && tmp_meta->size <= SMALL)
-#define IF_FILL (size <= tmp_meta->size + (tmp_meta->size % getpagesize())\
-&& size > SMALL)
 
 extern t_memory	g_memory;
 extern t_mutex	g_mutex;
@@ -32,7 +42,7 @@ static t_block	*look_for_ptr(void *ptr)
 	return (NULL);
 }
 
-t_block	*error(void *ptr, size_t size)
+t_block			*error(void *ptr, size_t size)
 {
 	t_block	*tmp_meta;
 
@@ -47,7 +57,7 @@ t_block	*error(void *ptr, size_t size)
 	return (tmp_meta);
 }
 
-void	*reallocation(void *ptr, size_t size)
+void			*reallocation(void *ptr, size_t size)
 {
 	t_block	*tmp_meta;
 	void	*allocation_familliale;
@@ -56,7 +66,9 @@ void	*reallocation(void *ptr, size_t size)
 		return (malloc(size));
 	else if ((tmp_meta = error(ptr, size)) == NULL)
 		return (NULL);
-	else if (IF_TINY || IF_SMALL || IF_FILL)
+	else if (IF_TINY || IF_SMALL ||
+			(size <= tmp_meta->size + (tmp_meta->size % getpagesize()) &&
+			size > SMALL))
 		return (ptr);
 	else
 	{
@@ -73,7 +85,7 @@ void	*reallocation(void *ptr, size_t size)
 	return (allocation_familliale);
 }
 
-void	*realloc(void *ptr, size_t size)
+void			*realloc(void *ptr, size_t size)
 {
 	void	*allocation_familliale;
 

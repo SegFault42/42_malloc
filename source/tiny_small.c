@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   tiny_small.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/07/22 19:18:30 by rabougue          #+#    #+#             */
+/*   Updated: 2017/07/22 19:26:05 by rabougue         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/malloc.h"
 
 extern t_memory	g_memory;
@@ -52,7 +64,7 @@ static t_block	*alloc_tiny(t_block *tmp, size_t size)
 	return (tmp);
 }
 
-void	*alloc_tiny_small(size_t size)
+void			*alloc_tiny_small(size_t size)
 {
 	t_block	*tmp;
 
@@ -73,4 +85,3 @@ void	*alloc_tiny_small(size_t size)
 	tmp->size = size;
 	return (tmp->ptr);
 }
-

@@ -6,7 +6,7 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/19 05:14:45 by rabougue          #+#    #+#             */
-/*   Updated: 2017/05/20 06:05:20 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/07/22 20:11:20 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static unsigned long	switch_hexa(unsigned long x)
 	return (0);
 }
 
-void	print_hexa_fd(unsigned long n, int fd)
+void					print_hexa_fd(unsigned long n, int fd)
 {
 	char			str[128];
 	int				size;

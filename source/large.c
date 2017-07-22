@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   large.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/07/22 19:19:00 by rabougue          #+#    #+#             */
+/*   Updated: 2017/07/22 19:22:09 by rabougue         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/malloc.h"
 
 extern t_memory	g_memory;
 
-static void	fill_lst_large(size_t ptr)
+static void		fill_lst_large(size_t ptr)
 {
 	t_block	*tmp;
 	t_block	*tmp_2;
@@ -33,39 +45,8 @@ static void	fill_lst_large(size_t ptr)
 		tmp_2->next = NULL;
 }
 
-/*static size_t	check_if_alloc_fill(size_t size)*/
-/*{*/
-	/*t_block	*tmp;*/
-	/*size_t	begin_page;*/
-	/*size_t	i;*/
-
-	/*begin_page = 1;*/
-	/*i = 1;*/
-	/*tmp = g_memory.meta_large;*/
-	/*while (tmp && tmp->free == 1)*/
-	/*{*/
-		/*if ((int)tmp->ptr % getpagesize() == 0)*/
-			/*begin_page = i;*/
-		/*++i;*/
-		/*tmp = tmp->next;*/
-	/*}*/
-	/*tmp = g_memory.meta_large;*/
-	/*tmp += begin_page;*/
-	/*i = 0;*/
-	/*while (tmp && tmp->free == 1)*/
-	/*{*/
-		/*i += tmp->size;*/
-		/*tmp = tmp->next;*/
-	/*}*/
-	/*if (getpagesize() - i >= size)*/
-		/*return (i);*/
-	/*return (0);*/
-/*}*/
-
 static t_block	*allocation(t_block *tmp, size_t size)
 {
-	/*size_t	addr_ok;*/
-
 	if (g_memory.meta_large == NULL)
 	{
 		if ((g_memory.meta_large = alloc_meta()) == NULL)
@@ -75,22 +56,10 @@ static t_block	*allocation(t_block *tmp, size_t size)
 		return (NULL);
 	fill_lst_large(0);
 	tmp = g_memory.meta_large;
-	/*}*/
-	/*else*/
-	/*{*/
-		/*if ((addr_ok = check_if_alloc_fill(size)) == 0)*/
-		/*{*/
-			/*if (alloc_data(size) == false)*/
-				/*return (NULL);*/
-			/*fill_lst_large(0);*/
-		/*}*/
-		/*else*/
-			/*fill_lst_large(addr_ok);*/
-	/*}*/
 	return (tmp);
 }
 
-void	*alloc_large(size_t size)
+void			*alloc_large(size_t size)
 {
 	t_block	*tmp;
 
@@ -111,4 +80,3 @@ void	*alloc_large(size_t size)
 	tmp->size = size;
 	return (tmp->ptr);
 }
-

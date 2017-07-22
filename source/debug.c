@@ -1,17 +1,31 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   debug.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/07/22 19:19:09 by rabougue          #+#    #+#             */
+/*   Updated: 2017/07/22 20:27:54 by rabougue         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/malloc.h"
 
 extern t_memory	g_memory;
 extern t_mutex	g_mutex;
 
-void	save_alloc_history(size_t size, void *allocation)
+void			save_alloc_history(size_t size, void *allocation)
 {
 	static size_t	i = 1;
 	int				fd;
 
 	if (i == 1)
-		fd = open("Malloc_history", O_RDWR | O_CREAT | O_TRUNC , S_IRUSR | S_IWUSR);
+		fd = open("Malloc_history", O_RDWR | O_CREAT | O_TRUNC,
+				S_IRUSR | S_IWUSR);
 	else
-		fd = open("Malloc_history", O_RDWR | O_CREAT | O_APPEND , S_IRUSR | S_IWUSR);
+		fd = open("Malloc_history", O_RDWR | O_CREAT | O_APPEND,
+				S_IRUSR | S_IWUSR);
 	if (fd != -1)
 	{
 		ft_putstr_fd(CYAN"Malloc_call : ", fd);
@@ -26,7 +40,7 @@ void	save_alloc_history(size_t size, void *allocation)
 	}
 }
 
-void	show_consum(size_t size)
+void			show_consum(size_t size)
 {
 	static size_t	size_total = 0;
 
@@ -46,11 +60,12 @@ void	show_consum(size_t size)
 	ft_putendl("\n"END);
 }
 
-void	debug_env(size_t size, void *allocation)
+void			debug_env(size_t size, void *allocation)
 {
 	if (getenv("MALLOC_HISTORY") && !ft_strcmp(getenv("MALLOC_HISTORY"), "1"))
 		save_alloc_history(size, allocation);
-	if (getenv("MALLOC_SHOW_CONSUM") && !ft_strcmp(getenv("MALLOC_SHOW_CONSUM"), "1"))
+	if (getenv("MALLOC_SHOW_CONSUM") &&
+			!ft_strcmp(getenv("MALLOC_SHOW_CONSUM"), "1"))
 		show_consum(size);
 }
 
@@ -77,7 +92,7 @@ static size_t	print_data_mem(t_block *zone)
 	return (total);
 }
 
-void	show_alloc_mem()
+void			show_alloc_mem(void)
 {
 	size_t	total;
 

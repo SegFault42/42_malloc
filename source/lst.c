@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   lst.c                                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/07/22 19:18:54 by rabougue          #+#    #+#             */
+/*   Updated: 2017/07/22 19:26:34 by rabougue         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/malloc.h"
 
 extern t_memory	g_memory;
@@ -21,7 +33,7 @@ static void	init_node(t_block *node, char flag, int i)
 	node->flag = flag;
 }
 
-bool	check_if_meta_full(size_t size)
+bool		check_if_meta_full(size_t size)
 {
 	t_block	*tmp;
 
@@ -36,7 +48,7 @@ bool	check_if_meta_full(size_t size)
 	return (LST_NOT_FULL);
 }
 
-void	fill_lst(char flag)
+void		fill_lst(char flag)
 {
 	uint8_t	i;
 	t_block	*tmp;

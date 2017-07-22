@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   memory.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/07/22 19:18:44 by rabougue          #+#    #+#             */
+/*   Updated: 2017/07/22 19:18:45 by rabougue         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../include/malloc.h"
 
 extern t_memory	g_memory;
@@ -25,7 +37,7 @@ bool	alloc_data(size_t size)
 	return (true);
 }
 
-t_block	*alloc_meta()
+t_block	*alloc_meta(void)
 {
 	t_block	*tmp;
 
