@@ -6,7 +6,7 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/22 19:18:54 by rabougue          #+#    #+#             */
-/*   Updated: 2017/07/22 19:26:34 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/07/22 23:23:45 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ bool		check_if_meta_full(size_t size)
 		tmp = g_memory.meta_tiny;
 	else
 		tmp = g_memory.meta_small;
-	while (tmp->next && tmp->free == 1)
+	while (tmp && tmp->free == 1)
 		tmp = tmp->next;
 	if (tmp->next == NULL)
 		return (LST_FULL);

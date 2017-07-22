@@ -6,7 +6,7 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/14 05:54:47 by rabougue          #+#    #+#             */
-/*   Updated: 2017/07/22 19:27:30 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/07/22 23:22:12 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@
 # include "../libft/includes/libft.h"
 
 # define MALLOC_FAILURE	(void *) -1
-# define TINY			(512)
-# define SMALL			(1024)
+# define TINY			(1024)
+# define SMALL			(4096)
 # define LST_FULL		(1)
 # define LST_NOT_FULL	(0)
 # define NB_ZONES		(128)
