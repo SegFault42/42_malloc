@@ -6,13 +6,26 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/22 19:19:00 by rabougue          #+#    #+#             */
-/*   Updated: 2017/07/22 19:22:09 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/07/23 19:36:19 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/malloc.h"
 
 extern t_memory	g_memory;
+
+static t_block	*norme(size_t *i)
+{
+	t_block	*tmp;
+
+	tmp = g_memory.meta_large;
+	while (tmp && tmp->free == 1)
+	{
+		tmp = tmp->next;
+		++*i;
+	}
+	return (tmp);
+}
 
 static void		fill_lst_large(size_t ptr)
 {
@@ -21,13 +34,8 @@ static void		fill_lst_large(size_t ptr)
 	size_t	i;
 
 	i = 1;
-	tmp = g_memory.meta_large;
 	tmp_2 = g_memory.meta_large;
-	while (tmp && tmp->free == 1)
-	{
-		tmp = tmp->next;
-		++i;
-	}
+	tmp = norme(&i);
 	if (tmp == NULL)
 	{
 		tmp = g_memory.meta_large;

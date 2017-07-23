@@ -6,7 +6,7 @@
 /*   By: rabougue <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/22 19:18:54 by rabougue          #+#    #+#             */
-/*   Updated: 2017/07/22 23:23:45 by rabougue         ###   ########.fr       */
+/*   Updated: 2017/07/23 19:42:18 by rabougue         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,13 +48,29 @@ bool		check_if_meta_full(size_t size)
 	return (LST_NOT_FULL);
 }
 
-void		fill_lst(char flag)
+static void	norme(t_block *tmp, t_block *tmp_2, char flag)
 {
 	uint8_t	i;
+
+	i = 0;
+	init_node(tmp, flag, i);
+	++i;
+	++tmp;
+	while (i < NB_ZONES)
+	{
+		tmp_2->next = tmp;
+		++tmp_2;
+		init_node(tmp, flag, i);
+		++tmp;
+		++i;
+	}
+}
+
+void		fill_lst(char flag)
+{
 	t_block	*tmp;
 	t_block	*tmp_2;
 
-	i = 0;
 	tmp = NULL;
 	tmp_2 = NULL;
 	if (flag == 't')
@@ -71,15 +87,5 @@ void		fill_lst(char flag)
 			tmp = tmp->next;
 		tmp_2 = tmp;
 	}
-	init_node(tmp, flag, i);
-	++i;
-	++tmp;
-	while (i < NB_ZONES)
-	{
-		tmp_2->next = tmp;
-		++tmp_2;
-		init_node(tmp, flag, i);
-		++tmp;
-		++i;
-	}
+	norme(tmp, tmp_2, flag);
 }

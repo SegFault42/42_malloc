@@ -6,7 +6,7 @@
 #    By: rabougue <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/10 19:16:51 by rabougue          #+#    #+#              #
-#    Updated: 2017/05/19 05:51:16 by rabougue         ###   ########.fr        #
+#    Updated: 2017/07/23 18:52:56 by rabougue         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ SRCS =	./source/malloc.c\
 		./source/large.c\
 		./source/lst.c\
 		./source/memory.c\
+		./source/show_alloc_mem.c\
 
 OBJS = $(SRCS:.c=.o)
 
